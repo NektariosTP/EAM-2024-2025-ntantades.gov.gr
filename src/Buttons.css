@@ -49,11 +49,13 @@
 .action-button {
     display: inline-block;
     padding: 15px;
-    background-color: #ffffff;
+    background-color: #ede8e8;
     color: #000;
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
+    border-color: #000;
+    border-width: 2px;
     transition: background-color 0.3s ease;
     text-align: center;
     display: inline-block;
@@ -64,4 +66,3 @@
 .action-button:hover {
     background-color: #9cd4ed;
 }
-
