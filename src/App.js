@@ -1,20 +1,17 @@
-import "./App.css";
-import Header  from "./Header";
-import NavBar from "./NavBar";
-import Buttons from "./Buttons";
-import Guide from "./Guide";
-import NavMenu from "./NavMenu";
-import Footer from "./Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import MainPage from "./pages/MainPage/MainPage";
+import Search1 from "./pages/Search1/Search1";
 
 export default function App() {
   return (
-    <div className="App">
-      <Header/>
-      <NavBar/>
-      <Buttons/>
-      <Guide/>
-      <NavMenu/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/Goneis" element={<Search1 />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }

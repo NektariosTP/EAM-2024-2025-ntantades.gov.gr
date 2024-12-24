@@ -1,0 +1,84 @@
+.query-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.query-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 500px;
+  position: relative;
+}
+
+.query-input {
+  padding: 10px 40px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 400px;
+  font-size: 16px;
+  background: url('../../../public/location.png') no-repeat 10px center;
+  background-size: 20px 20px;
+  background-color: white;
+}
+
+.query-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #9cd4ed;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.query-button:hover {
+  background-color: #bbb;
+}
+
+.query-suggestions {
+  margin: 10px 0 0;
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  width: 365px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+}
+
+.query-suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.query-suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.query-stats {
+  margin-top: 15px;
+  color: black;
+  font-size: 16px;
+  margin-right: 225px;
+}
+
+.divider {
+  margin: 0 10px;
+  color: black;
+}
