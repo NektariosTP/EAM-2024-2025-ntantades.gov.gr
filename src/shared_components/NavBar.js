@@ -7,7 +7,7 @@ const NavBar = () => {
 
     return (
         <nav className="navbar">
-            <div className="menu-item">Αρχική</div>
+            <a href="/" className="menu-item">Αρχική</a>
 
             {/* ΓΟΝΕΙΣ Dropdown */}
             <div 
@@ -15,14 +15,14 @@ const NavBar = () => {
                 onMouseEnter={() => setShowParentsMenu(true)}
                 onMouseLeave={() => setShowParentsMenu(false)}
             >
-                Γονείς
+                <a href="Goneis" className="menu-link">Γονείς</a>
                 {showParentsMenu && (
                     <div className="dropdown-content">
-                        <div>Προϋποθέσεις Συμμετοχής</div>
-                        <div>Αναζήτηση Νταντάδων</div>
-                        <div>Πληρωμή Νταντάς</div>
-                        <div>Επεξεργασία Συμφωνίας</div>
-                        <div>Ιστορικό Αιτήσεων</div>
+                        <div onClick={() => window.location.href = "/parents/eligibility"}>Προϋποθέσεις Συμμετοχής</div>
+                        <div onClick={() => window.location.href = "/parents/find-nannies"}>Αναζήτηση Νταντάδων</div>
+                        <div onClick={() => window.location.href = "/parents/payments"}>Πληρωμή Νταντάς</div>
+                        <div onClick={() => window.location.href = "/parents/edit-agreement"}>Επεξεργασία Συμφωνίας</div>
+                        <div onClick={() => window.location.href = "/parents/history"}>Ιστορικό Αιτήσεων</div>
                     </div>
                 )}
             </div>
@@ -33,25 +33,24 @@ const NavBar = () => {
                 onMouseEnter={() => setShowNanniesMenu(true)}
                 onMouseLeave={() => setShowNanniesMenu(false)}
             >
-                Νταντάδες
+                <a href="#" className="menu-link">Νταντάδες</a>
                 {showNanniesMenu && (
                     <div className="dropdown-content">
-                        <div>Προϋποθέσεις Συμμετοχής</div>
-                        <div>Εγγραφή στο Μητρώο</div>
-                        <div>Δημιουργία Αγγελίας</div>
-                        <div>Ραντεβού με Γονείς</div>
-                        <div>Αποδοχή Πληρωμής</div>
-                        <div>Ιστορικό Αιτήσεων</div>
-                        <div>Αξιολογήσεις Προφίλ</div>
+                        <div onClick={() => window.location.href = "/nannies/eligibility"}>Προϋποθέσεις Συμμετοχής</div>
+                        <div onClick={() => window.location.href = "/nannies/register"}>Εγγραφή στο Μητρώο</div>
+                        <div onClick={() => window.location.href = "/nannies/create-ad"}>Δημιουργία Αγγελίας</div>
+                        <div onClick={() => window.location.href = "/nannies/appointments"}>Ραντεβού με Γονείς</div>
+                        <div onClick={() => window.location.href = "/nannies/payments"}>Αποδοχή Πληρωμής</div>
+                        <div onClick={() => window.location.href = "/nannies/history"}>Ιστορικό Αιτήσεων</div>
+                        <div onClick={() => window.location.href = "/nannies/reviews"}>Αξιολογήσεις Προφίλ</div>
                     </div>
                 )}
             </div>
 
-            <div className="menu-item">Πληροφορίες</div>
-            <div className="menu-item">Επικοινωνία</div>
+            <a href="/info" className="menu-item">Πληροφορίες</a>
+            <a href="/contact" className="menu-item">Επικοινωνία</a>
         </nav>
     );
 };
 
 export default NavBar;
-
