@@ -35,6 +35,12 @@
     cursor: pointer;
 }
 
+.contact li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
 .menu-column li a {
     text-decoration: none;
     color: #007bff;
@@ -52,4 +58,10 @@
     color: #888;
     border: 1px solid #ccc;
     width: 50%;
+}
+
+.interactive-map {
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
 }

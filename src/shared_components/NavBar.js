@@ -18,7 +18,7 @@ const NavBar = () => {
                 <a href="Goneis" className="menu-link">Γονείς</a>
                 {showParentsMenu && (
                     <div className="dropdown-content">
-                        <div onClick={() => window.location.href = "/parents/eligibility"}>Προϋποθέσεις Συμμετοχής</div>
+                        <div onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</div>
                         <div onClick={() => window.location.href = "/parents/find-nannies"}>Αναζήτηση Νταντάδων</div>
                         <div onClick={() => window.location.href = "/parents/payments"}>Πληρωμή Νταντάς</div>
                         <div onClick={() => window.location.href = "/parents/edit-agreement"}>Επεξεργασία Συμφωνίας</div>
@@ -47,7 +47,7 @@ const NavBar = () => {
                 )}
             </div>
 
-            <a href="/info" className="menu-item">Πληροφορίες</a>
+            <a href="/Information" className="menu-item">Πληροφορίες</a>
             <a href="/contact" className="menu-item">Επικοινωνία</a>
         </nav>
     );
