@@ -4,6 +4,7 @@ import NavBar from "../../shared_components/NavBar";
 import Query from "./Query"
 import Info from "./Info"
 import Reviews from "./Reviews"
+import Suggestions from "./Suggestions"
 import NavMenu from "../../shared_components/NavMenu";
 import Footer from "../../shared_components/Footer";
 
@@ -15,6 +16,7 @@ export default function Search1() {
       <Query/>
       <Info/>
       <Reviews/>
+      <Suggestions/>
       <NavMenu/>
       <Footer/>
     </div>

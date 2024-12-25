@@ -1,7 +1,6 @@
 .query-container {
   background-color: #e0e0e0;
   padding: 20px;
-  border-radius: 10px;
   text-align: center;
   height: 400px;
   margin: auto;
@@ -17,19 +16,18 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 500px;
-  position: relative;
+  width: 35%;
 }
 
 .query-input {
-  padding: 10px 40px 10px 40px;
+  padding: 10px 20px;
   border: 1px solid #ccc;
   border-radius: 25px;
-  width: 400px;
   font-size: 16px;
   background: url('../../../public/location.png') no-repeat 10px center;
   background-size: 20px 20px;
   background-color: white;
+  text-indent: 7%;
 }
 
 .query-button {
@@ -39,15 +37,10 @@
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.query-button:hover {
-  background-color: #bbb;
 }
 
 .query-suggestions {
-  margin: 10px 0 0;
+  margin: 0.5% 0.3% 0;
   list-style: none;
   padding: 0;
   max-height: 150px;
@@ -75,7 +68,7 @@
   margin-top: 15px;
   color: black;
   font-size: 16px;
-  margin-right: 225px;
+  margin-right: 11%;
 }
 
 .divider {
