@@ -47,6 +47,7 @@
 }
 
 .action-button {
+    cursor: pointer;
     display: inline-block;
     padding: 15px;
     background-color: #ede8e8;
