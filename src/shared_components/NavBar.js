@@ -47,8 +47,8 @@ const NavBar = () => {
                 )}
             </div>
 
-            <a href="/Information" className="menu-item">Πληροφορίες</a>
-            <a href="/contact" className="menu-item">Επικοινωνία</a>
+            <a href="/Plirofories" className="menu-item">Πληροφορίες</a>
+            <a href="/Epikoinonia" className="menu-item">Επικοινωνία</a>
         </nav>
     );
 };
