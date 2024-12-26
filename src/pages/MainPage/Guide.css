@@ -9,7 +9,6 @@
 h2 {
     font-size: 24px;
     margin-top: 0px;
-    margin-bottom: 40px;
     color: #333;
 }
 
@@ -18,6 +17,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    margin-top: 30px;
 }
 
 .step {
@@ -58,4 +58,5 @@ h2 {
 .arrow {
     font-size: 24px;
     color: #555;
+    pointer-events: none;
 }
