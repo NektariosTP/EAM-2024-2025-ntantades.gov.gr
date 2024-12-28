@@ -15,7 +15,7 @@ const NavBar = () => {
                 onMouseEnter={() => setShowParentsMenu(true)}
                 onMouseLeave={() => setShowParentsMenu(false)}
             >
-                <a href="Goneis" className="menu-link">Γονείς</a>
+                <a href="/Goneis" className="menu-link">Γονείς</a>
                 {showParentsMenu && (
                     <div className="dropdown-content">
                         <div onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</div>

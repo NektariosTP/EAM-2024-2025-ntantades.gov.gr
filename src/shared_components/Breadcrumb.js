@@ -9,8 +9,10 @@ function Breadcrumb() {
     const breadcrumbItems = [
         { label: "Αρχική", path: "/" },
         { label: "Γονείς", path: "/Goneis" },
+        { label: "Αγγελίες", path: "/Goneis/Aggelies" },
         { label: "Πληροφορίες", path: "/Plirofories" },
         { label: "Επικοινωνία", path: "/Epikoinonia" },
+        
         /* Add every site and its path */
     ];
 
@@ -39,7 +41,7 @@ function Breadcrumb() {
             {previousBreadcrumb && (
                 <div className="breadcrumb-back">
                     <a href="your-back-link">
-                        <img src="back.png" alt="Back" />
+                        <img src="../../back.png" alt="Back" />
                     </a>
                     <Link to={previousBreadcrumb.path}>Πίσω</Link>
                 </div>
