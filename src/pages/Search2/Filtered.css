@@ -1,0 +1,136 @@
+.filtered-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.filters-section {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.filters-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.experience-slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 5px;
+}
+
+.profiles-section {
+  flex: 3;
+}
+
+.filtered-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.filtered-card {  
+  /*margin-bottom: 20%;*/
+  cursor: pointer;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.filtered-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.filtered-card img.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.filtered-card h3 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.filtered-card p {
+  margin-top: 2%;
+  color: #555;
+  font-size: 0.85em;
+}
+
+.filtered-card .rating {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.filtered-card .rating .stars {
+  margin-left: 5px;
+  color: blue;
+}
+
+.filtered-card .details {
+  justify-content: space-between;
+  font-size: 0.85em;
+  display: flex;
+  gap: 10px;
+  color: #444;
+}
+
+.filtered-card .info {
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #555;
+  line-height: 1.4;
+  height: 120px; /* Set a fixed height if needed */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
