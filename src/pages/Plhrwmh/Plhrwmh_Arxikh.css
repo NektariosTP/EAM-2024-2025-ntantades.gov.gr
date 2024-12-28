@@ -1,0 +1,32 @@
+.plhrwmh-container {
+    margin: 1% 15% 1%;
+    height: 500px; /* Μειωμένο ύψος πλαισίου */
+    display: flex;
+    flex-direction: column; /* Κάθετη διάταξη */
+    align-items: center;
+    background-color: #e6e6e6;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+}
+
+.plhrwmh-title {
+    font-size: 1.8rem;
+    margin-bottom: 0%; /* Μειωμένη απόσταση από την εικόνα */
+}
+
+.plhrwmh-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Κεντράρει την εικόνα */
+    align-items: center;
+    margin: -6.5% 1%; /* Προσαρμοσμένο για να διατηρείται η εικόνα κεντραρισμένη */
+}
+
+.payment-img {
+    width: 80%; /* Η εικόνα καλύπτει το 80% του πλάτους */
+    height: auto; /* Αυτόματη προσαρμογή ύψους για διατήρηση αναλογιών */
+    max-height: 350px; /* Μειωμένο μέγιστο ύψος */
+    object-fit: cover; /* Διατηρεί την αισθητική της εικόνας */
+}

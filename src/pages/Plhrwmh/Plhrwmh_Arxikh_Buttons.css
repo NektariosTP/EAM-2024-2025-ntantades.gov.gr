@@ -1,0 +1,29 @@
+.buttons-container {
+    display: flex;
+    justify-content: space-around; /* Χωρίζει τα κουμπιά ομοιόμορφα */
+    margin-top: 2%;
+    width: 90%;
+  }
+  
+  .payment-button {
+    background-color: #ccf5cc; /* Απαλό πράσινο */
+    border: 1px solid #000; /* Μαύρο περίγραμμα */
+    border-radius: 3px; /* Ελαφρώς στρογγυλεμένες γωνίες */
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    position: relative; /* Για την τοποθέτηση της "ετικέτας" */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    height: auto;
+  }
+  
+  .payment-button:hover {
+    background-color: #80ee80; /* Πιο σκούρο πράσινο στο hover */
+  }
+  
+  
