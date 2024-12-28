@@ -19,13 +19,13 @@ function Buttons() {
                 
                 {/* Αριστερό Section */}
                 <div className="button-section">
-                    <p>Χρειάζεστε νταντά για το παιδί σας;<br />Προυποθέσεις Συμμετοχής</p>
+                    <p>Χρειάζεστε νταντά για το παιδί σας;</p>
                     <button className="action-button" onClick={() => navigate("/Goneis")}>Γονέας</button>
                 </div>
 
                 {/* Δεξί Section */}
                 <div className="button-section">
-                    <p>Αναζητείτε εργασία ως νταντά;<br />Προυποθέσεις Συμμετοχής</p>
+                    <p>Αναζητείτε εργασία ως νταντά;</p>
                     <button className="action-button" onClick={() => alert("Νταντά clicked!")}>Νταντά</button>
                 </div>
             </div>
