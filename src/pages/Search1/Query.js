@@ -42,7 +42,7 @@ function Query() {
 
     const handleSearch = () => {
         if (input) {
-            navigate(`/search?query=${input}`);
+            navigate(`/Goneis/Aggelies?query=${input}`);
         }
     };
 
