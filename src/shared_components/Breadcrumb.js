@@ -10,8 +10,11 @@ function Breadcrumb() {
         { label: "Αρχική", path: "/" },
         { label: "Γονείς", path: "/Goneis" },
         { label: "Αγγελίες", path: "/Goneis/Aggelies" },
+        { label: "Προφίλ", path: "/Goneis/Aggelies/Profile" },
+        { label: "Νταντάδες", path: "/Ntantades"},
+        { label: "Eγγραφή", path: "/Ntantades/Eggrafi"},
         { label: "Πληροφορίες", path: "/Plirofories" },
-        { label: "Επικοινωνία", path: "/Epikoinonia" },
+        { label: "Επικοινωνία", path: "/Epikoinonia" }
         
         /* Add every site and its path */
     ];
@@ -20,11 +23,6 @@ function Breadcrumb() {
     const currentBreadcrumbs = breadcrumbItems.filter(item =>
         location.pathname.startsWith(item.path)
     );
-
-    // Determine the previous breadcrumb
-    const previousBreadcrumb = currentBreadcrumbs.length > 1
-        ? currentBreadcrumbs[currentBreadcrumbs.length - 2]
-        : null;
 
     return (
         <nav className="breadcrumb-container">
@@ -38,14 +36,6 @@ function Breadcrumb() {
                     </span>
                 ))}
             </div>
-            {previousBreadcrumb && (
-                <div className="breadcrumb-back">
-                    <a href="your-back-link">
-                        <img src="../../back.png" alt="Back" />
-                    </a>
-                    <Link to={previousBreadcrumb.path}>Πίσω</Link>
-                </div>
-            )}
         </nav>
     );
 }

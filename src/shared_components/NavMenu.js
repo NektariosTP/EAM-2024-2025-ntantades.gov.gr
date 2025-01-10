@@ -8,7 +8,7 @@ function NavMenu() {
                 <h3>Γονείς</h3>
                 <ul>
                     <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Αναζήτηση Νταντάδων</li>
+                    <li onClick={() => window.location.href = "/Goneis/Αggelies"}>Αναζήτηση Νταντάδων</li>
                     <li onClick={() => window.location.href = "/Goneis"}>Πληρωμή Νταντάς</li>
                     <li onClick={() => window.location.href = "/Goneis"}>Επεξεργασία Συνεργασίας</li>
                     <li onClick={() => window.location.href = "/Goneis"}>Ιστορικό Αιτήσεων</li>
@@ -17,8 +17,8 @@ function NavMenu() {
             <div className="menu-column">
                 <h3>Νταντάδες</h3>
                 <ul>
-                    <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Εγγραφή στο Μητρώο</li>
+                    <li onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</li>
+                    <li onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</li>
                     <li onClick={() => window.location.href = "/Goneis"}>Δημιουργία Αγγελίας</li>
                     <li onClick={() => window.location.href = "/Goneis"}>Ραντεβού με Γονείς</li>
                     <li onClick={() => window.location.href = "/Goneis"}>Αποδοχή Πληρωμής</li>
@@ -29,7 +29,7 @@ function NavMenu() {
             <div className="menu-column">
                 <h3>Βοήθεια</h3>
                 <ul>
-                    <li onClick={() => window.location.href = "/Information"}>Τι είναι το πρόγραμμα;</li>
+                    <li onClick={() => window.location.href = "/Plirofories"}>Τι είναι το πρόγραμμα;</li>
                     <li>Οδηγίες</li>
                     <li>FAQ Γονέων</li>
                     <li>FAQ Νταντάδων</li>
@@ -38,9 +38,9 @@ function NavMenu() {
             <div className="menu-column">
                 <h3>Επικοινωνία</h3>
                 <ul>
-                    <li>Τηλέφωνο: 210 325 8080/8090</li>
-                    <li>Email: ntantades@yeka.gr</li>
-                    <li>Σταδίου 29, Αθήνα 105 59</li>
+                    <li onClick={() => window.location.href = "/Epikoinonia"}>Τηλέφωνο: 210 325 8080/8090</li>
+                    <li onClick={() => window.location.href = "/Epikoinonia"}>Email: ntantades@yeka.gr</li>
+                    <li onClick={() => window.location.href = "/Epikoinonia"}>Σταδίου 29, Αθήνα 105 59</li>
                     <li>
                         <div className="interactive-map">
                             <iframe 

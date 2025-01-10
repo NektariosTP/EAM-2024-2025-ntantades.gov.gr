@@ -19,7 +19,7 @@ const NavBar = () => {
                 {showParentsMenu && (
                     <div className="dropdown-content">
                         <div onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</div>
-                        <div onClick={() => window.location.href = "/parents/find-nannies"}>Αναζήτηση Νταντάδων</div>
+                        <div onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</div>
                         <div onClick={() => window.location.href = "/parents/payments"}>Πληρωμή Νταντάς</div>
                         <div onClick={() => window.location.href = "/parents/edit-agreement"}>Επεξεργασία Συμφωνίας</div>
                         <div onClick={() => window.location.href = "/parents/history"}>Ιστορικό Αιτήσεων</div>
@@ -33,11 +33,11 @@ const NavBar = () => {
                 onMouseEnter={() => setShowNanniesMenu(true)}
                 onMouseLeave={() => setShowNanniesMenu(false)}
             >
-                <a href="#" className="menu-link">Νταντάδες</a>
+                <a href="/Ntantades" className="menu-link">Νταντάδες</a>
                 {showNanniesMenu && (
                     <div className="dropdown-content">
-                        <div onClick={() => window.location.href = "/nannies/eligibility"}>Προϋποθέσεις Συμμετοχής</div>
-                        <div onClick={() => window.location.href = "/nannies/register"}>Εγγραφή στο Μητρώο</div>
+                        <div onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</div>
+                        <div onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</div>
                         <div onClick={() => window.location.href = "/nannies/create-ad"}>Δημιουργία Αγγελίας</div>
                         <div onClick={() => window.location.href = "/nannies/appointments"}>Ραντεβού με Γονείς</div>
                         <div onClick={() => window.location.href = "/nannies/payments"}>Αποδοχή Πληρωμής</div>
