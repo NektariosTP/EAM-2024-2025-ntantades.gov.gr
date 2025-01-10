@@ -1,22 +1,20 @@
-import "./MainPage.css";
+import "./Search3.css";
 import Header  from "../../shared_components/Header";
 import NavBar from "../../shared_components/NavBar";
-import Buttons from "./Buttons";
-import Guide from "./Guide";
-import Carousel from "./Carousel"
-import Announcements from "./Announcements";
+import Breadcrumb from "../../shared_components/Breadcrumb";
+import ProfileTop from "./ProfileTop"
+import ProfileBody from "./ProfileBody"
 import NavMenu from "../../shared_components/NavMenu";
 import Footer from "../../shared_components/Footer";
 
-export default function MainPage() {
+export default function Search3() {
   return (
-    <div className="MainPage">
+    <div className="Search3">
       <Header/>
       <NavBar/>
-      <Buttons/>
-      <Guide/>
-      <Carousel/>
-      <Announcements/>
+      <Breadcrumb/>
+      <ProfileTop/>
+      <ProfileBody/>
       <NavMenu/>
       <Footer/>
     </div>

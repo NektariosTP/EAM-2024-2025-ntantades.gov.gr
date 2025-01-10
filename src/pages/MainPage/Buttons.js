@@ -26,7 +26,7 @@ function Buttons() {
                 {/* Δεξί Section */}
                 <div className="button-section">
                     <p>Αναζητείτε εργασία ως νταντά;</p>
-                    <button className="action-button" onClick={() => alert("Νταντά clicked!")}>Νταντά</button>
+                    <button className="action-button" onClick={() => navigate("/Ntantades")}>Νταντά</button>
                 </div>
             </div>
         </div>

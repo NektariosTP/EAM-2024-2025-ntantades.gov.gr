@@ -4,7 +4,7 @@ import "./Info.css";
 function Info() {
   return (
     <div className="info-container">
-      <h1>Προϋποθέσεις συμμετοχής</h1>
+      <h2 className="search-h2">Προϋποθέσεις συμμετοχής</h2>
       
       <div className="info-box">
         <h2>Ποιοι δικαιούνται να συμμετάσχουν στο «Νταντάδες της γειτονιάς;»</h2>

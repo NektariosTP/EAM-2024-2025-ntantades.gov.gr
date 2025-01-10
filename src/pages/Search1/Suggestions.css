@@ -4,7 +4,7 @@
   padding: 0 20px;
 }
 
-h2 {
+.search-h2 {
   font-size: 2em;
   margin-bottom: 30px;
   color: #333;
@@ -18,7 +18,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-.nanny-card {
+.suggestion-nanny-card {
   cursor: pointer;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
@@ -29,12 +29,12 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.nanny-card:hover {
+.suggestion-nanny-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.nanny-card img.avatar {
+.suggestion-nanny-card img.avatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -42,13 +42,13 @@ h2 {
   object-fit: cover;
 }
 
-.nanny-card h3 {
+.suggestion-nanny-card h3 {
   font-size: 1.3em;
   margin: 12px 0;
   color: #333;
 }
 
-.nanny-card p {
+.suggestion-nanny-card p {
   color: #777;
   font-size: 0.9em;
   margin: 5px 0;

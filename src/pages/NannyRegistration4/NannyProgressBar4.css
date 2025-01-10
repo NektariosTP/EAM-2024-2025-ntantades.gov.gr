@@ -1,0 +1,55 @@
+.progress-bar {
+  display: flex;
+  align-items: flex-start; /* Ευθυγράμμιση επάνω για το κείμενο */
+  justify-content: center;
+  margin: 20px 0;
+  background-color: #a7e2b8c0; 
+  padding: 10px;
+  border-radius: 10px;
+  height: 90%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.stage {
+  text-align: center;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #d3d3d3; /* Γκρι χρώμα */
+  border: 2px solid #ccc;
+  margin: 0 auto; /* Κεντράρει τον κύκλο */
+}
+
+.completed .circle {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 3px solid #045c2cd4; /* Έντονο μπλε περίγραμμα */
+}
+
+.active .circle {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 5px solid #045c2cd4; /* Έντονο μπλε περίγραμμα */
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 3rem; /* Πιο μακρύ βέλος */
+  color: black; /* Μαύρο χρώμα */
+  margin: 0 20px; /* Μεγαλύτερη απόσταση ανάμεσα στα στάδια */
+}

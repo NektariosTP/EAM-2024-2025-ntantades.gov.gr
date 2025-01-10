@@ -4,7 +4,8 @@ import "./Guide.css";
 function Guide() {
     return (
         <div className="guide-container">
-            <h2>Πώς Δουλεύει</h2>
+            
+            <h2 className="guide-title">Πώς Δουλεύει</h2>
             <div className="guide-steps">
                 <div className="step">
                     <div className="step-number">1</div>

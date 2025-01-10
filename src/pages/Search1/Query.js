@@ -41,9 +41,8 @@ function Query() {
     };
 
     const handleSearch = () => {
-        if (input) {
-            navigate(`/Goneis/Aggelies?query=${input}`);
-        }
+        localStorage.setItem("searchInput", input);
+        navigate(`/Goneis/Aggelies`);
     };
 
     return (

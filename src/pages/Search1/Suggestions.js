@@ -21,15 +21,15 @@ function Suggestions() {
     };
 
     const handleViewMore = () => {
-        navigate('/Search2'); // Redirect to the page that lists all nannies
+        navigate('/Goneis/Aggelies'); // Redirect to the page that lists all nannies
     };
 
     return (
         <div className="suggestions-container">
-            <h2>Δημοφιλείς Νταντάδες</h2>
+            <h2 className="search-h2">Δημοφιλείς Νταντάδες</h2>
             <div className="nannies-grid">
                 {nannies.map((nanny) => (
-                    <div key={nanny.id} className="nanny-card" onClick={() => handleNannyClick(nanny.id)}>
+                    <div key={nanny.id} className="suggestion-nanny-card" onClick={() => handleNannyClick(nanny.id)}>
                         <img className="avatar" src={nanny.img} alt={nanny.name} />
                         <h3>{nanny.name}</h3>
                         <p>{nanny.location}</p>

@@ -5,7 +5,7 @@ function Announcements() {
     return (
         <div className="container">
             <div className="section">
-                <div className="section-title">Ανακοινώσεις</div>
+                <div className="section-title1">Ανακοινώσεις</div>
                 <div className="announcements">
                     <div className="announcement-block">
                         <img src="/greece_map.jpg" alt="Announcement 1" />
@@ -34,32 +34,6 @@ function Announcements() {
                             <h3>Αναβάθμιση Ιστοσελίδας</h3>
                             <p>Η ιστοσελίδα του προγράμματος «Νταντάδες της γειτονιάς» αναβαθμίστηκε μέσω της συνεργασίας με φοιτητές τους τμήματος Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ. Τους ευχαριστούμε θερμά!</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className="separator"></div>
-            <div className="section">
-                <div className="section-title">Χρήσιμοι Σύνδεσμοι</div>
-                <div className="useful-links">
-                    <div className="link-block">
-                        <a href="/link1">Useful Link 1</a>
-                        <p>01/01/2024</p>
-                    </div>
-                    <div className="link-block">
-                        <a href="/link2">Useful Link 2</a>
-                        <p>02/01/2024</p>
-                    </div>
-                    <div className="link-block">
-                        <a href="/link3">Useful Link 3</a>
-                        <p>03/01/2024</p>
-                    </div>
-                    <div className="link-block">
-                        <a href="/link4">Useful Link 4</a>
-                        <p>04/01/2024</p>
-                    </div>
-                    <div className="link-block">
-                        <a href="/link5">Useful Link 5</a>
-                        <p>05/01/2024</p>
                     </div>
                 </div>
             </div>

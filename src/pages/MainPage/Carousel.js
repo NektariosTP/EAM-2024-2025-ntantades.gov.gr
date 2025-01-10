@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Reviews.css";
+import "./Carousel.css";
 
-function Reviews() {
+function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const reviews = [
@@ -66,7 +66,7 @@ function Reviews() {
 
     return (
         <div className="carousel">
-            <h2 className="search-h2">Κριτικές άλλων γονέων για τις Νταντάδες</h2>
+            <h2 className="carousel-title">Νέες Νταντάδες καθημερινά</h2>
             <div className="carousel-container">
                 <button className="arrow-carousel" onClick={handlePrev}>
                     &lt;
@@ -102,4 +102,4 @@ function Reviews() {
     );
 }
 
-export default Reviews;
+export default Carousel;

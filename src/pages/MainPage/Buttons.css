@@ -50,7 +50,7 @@
     cursor: pointer;
     display: inline-block;
     padding: 15px;
-    background-color: #ede8e8;
+    background-color: #9cd4ed;
     color: #000;
     text-decoration: none;
     font-weight: bold;
@@ -62,8 +62,11 @@
     display: inline-block;
     margin-top: 10px;
     font-size: 18px;
+    height: 60%;
+    width: 20%;
 }
 
 .action-button:hover {
-    background-color: #9cd4ed;
+    background-color: #0065b3;
+    color: white;
 }

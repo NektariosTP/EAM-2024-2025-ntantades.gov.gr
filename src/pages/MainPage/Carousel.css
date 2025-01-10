@@ -1,13 +1,14 @@
 .carousel {
   text-align: center;
   font-family: Arial, sans-serif;
+  margin-bottom: 75px;
 }
 
-.search-h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-  color: #333;
+.carousel-title {
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
 }
 
 .carousel-container {

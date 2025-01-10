@@ -6,7 +6,7 @@
 
 .filters-section {
   flex: 1;
-  max-width: 300px;
+  max-width: 310px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 20px;
@@ -19,14 +19,23 @@
 }
 
 .filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
-.filter-group label {
+.filter-group div {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.filter-group-label {
   font-size: 1em;
   font-weight: bold;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .filter-group select {
@@ -37,19 +46,271 @@
   font-size: 1em;
 }
 
+.input-container {
+  width: 550px;
+}
+
+.remove-all-filters-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.remove-all-filters-button:hover {
+  background-color: #d32f2f; /* Darker red */
+}
+
+.query-suggestions-search {
+  margin: 0.5% 0.3% 0;
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  width: 275px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.query-suggestion-item-search {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.query-input-search {
+  padding: 10px 20px;
+  background: url('../../../public/location.png') no-repeat 10px center;
+  background-size: 20px 20px;
+  background-color: white;
+  text-indent: 10%;
+
+  overflow: hidden;
+  clip-path: inset(0 0 0 0 round 25px);
+}
+
+/* Filter 2: Availability */
+.availability-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.selectable:hover {
+  background-color: #f0f0f0;
+}
+
+.selectable.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Days of the week styling */
+.availability-days {
+  display: flex;
+  justify-content:flex-start;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.day {
+  width: 5px;
+  text-align: center;
+}
+
+/* Time of day styling */
+.availability-times {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.time {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-icon {
+  height: 20px;
+}
+
 .experience-slider {
   position: relative;
   width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .slider {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   width: 100%;
   z-index: 2;
+  -webkit-appearance: none;
+  appearance: none;
   height: 5px;
+  background: transparent; /* Transparent background */
+  pointer-events: none; /* Allows both sliders to overlap */
 }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007bff; /* Customize color */
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto; /* Enables interaction */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5px;
+  width: 100%;
+  background: #ccc;
+  z-index: 1;
+}
+
+.slider-active-track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5px;
+  background: #007bff;
+  z-index: 1;
+}
+
+.applied-filters {
+  margin-bottom: 1rem;
+}
+
+.applied-filter-tag {
+  display: inline-block;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.applied-filter-tag:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Filter - Employment */
+.filter-group input[type="radio"] {
+  margin-bottom: 5%;
+}
+
+/* Filter - Extra Services */
+.filter-group .extraServices {
+  margin-left: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.filter-group .extraServices + label {
+  display: inline-block;
+  font-size: 14px;
+  text-align: right;
+}
+
+.filter-group .extraServices:checked + label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.filter-group .extraServices {
+  margin-bottom: 5px;
+}
+
+/* Filter - Languages */
+.filter-group .languages {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.filter-group .languages option {
+  padding: 10px;
+}
+
+/* Filter - Degree */
+.filter-group .degree {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.filter-group .degree option {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .profiles-section {
   flex: 3;
@@ -133,4 +394,24 @@
   height: 120px; /* Set a fixed height if needed */
   overflow: hidden; /* Hide overflowing content */
   text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page-button {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  background: #64bbe4;
+  cursor: pointer;
+}
+
+.page-button.active {
+  background: #0065b3;
+  color: white;
+  border-color: #0065b3;
 }

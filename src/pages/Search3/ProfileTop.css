@@ -1,0 +1,82 @@
+.profile-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.profile-image {
+  background-color: #d3d3d3;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+}
+
+.nanny-name-profile {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.profile-details {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #444;
+}
+
+.profile-program {
+  font-size: 18px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.profile-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.rating-score {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars span {
+  color: #ffd700;
+  font-size: 28px;
+}
+
+.rating-count {
+  font-size: 18px;
+  color: #444;
+}

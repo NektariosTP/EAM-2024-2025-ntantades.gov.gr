@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 75px;
 }
 
 .query-input-wrapper {
@@ -28,7 +29,12 @@
   background-size: 20px 20px;
   background-color: white;
   text-indent: 7%;
+
+  /* Add this */
+  overflow: hidden; /* Prevents content overflow outside the border-radius */
+  clip-path: inset(0 0 0 0 round 25px); /* Ensures the background respects border-radius */
 }
+
 
 .query-button {
   padding: 10px 20px;
