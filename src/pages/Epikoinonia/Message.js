@@ -36,7 +36,7 @@ function Message() {
             maxLength={maxMessageLength}
             required
           />
-          <div className="char-counter">
+          <div className="char-counter-message">
             {maxMessageLength - message.length} χαρακτήρες απομένουν
           </div>
         </p>

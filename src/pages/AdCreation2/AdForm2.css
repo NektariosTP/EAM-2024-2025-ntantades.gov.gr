@@ -1,0 +1,48 @@
+.button-group-nannies-ad2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 6%; /* Add space between buttons */
+    max-width: 100%; /* Allow the buttons to stretch across the container */
+}
+
+.button-group-nannies-ad2 button {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-grow: 1; /* Allow buttons to grow and take equal space */
+    max-width: 25%; /* Set a maximum width for larger screens */
+    font-size: 1.1rem; 
+    padding: 10px 20px; /* Increase padding */
+    border-radius: 6px; 
+    cursor: pointer; 
+    color: white;
+    background-color: #007bff;
+    border: none;
+    text-align: center; /* Ensure button text stays centered */
+    margin-top: 5%;
+}
+
+.button-group-nannies-ad2 button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.submit-box-ad2 p {
+    margin-top: 4%;
+    font-size: 1em;
+}
+
+.form-container-ad2 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: left;
+}
+
+.form-container-ad2 img{
+    width: 24px;
+    height: 24px;
+}

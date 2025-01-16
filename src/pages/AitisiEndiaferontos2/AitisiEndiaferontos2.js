@@ -1,0 +1,22 @@
+import "./AitisiEndiaferontos2.css";
+import Header  from "../../shared_components/HeaderGoneas";
+import NavBar from "../../shared_components/NavBar";
+import Breadcrumb from "../../shared_components/Breadcrumb";
+import IdiwtikoSymfwnhtikoProgressBar from "./IdiwtikoSymfwnhtikoProgressBar";
+import AitisiSuccess from "./AitisiSuccess";
+import NavMenu from "../../shared_components/NavMenu";
+import Footer from "../../shared_components/Footer";
+
+export default function ProgrammatismosRantevou2() {
+  return (
+    <div className="AitisiEndiaferontos2">
+      <Header/>
+      <NavBar/>
+      <Breadcrumb/>
+      <IdiwtikoSymfwnhtikoProgressBar/>
+      <AitisiSuccess/>
+      <NavMenu/>
+      <Footer/>
+    </div>
+  );
+}

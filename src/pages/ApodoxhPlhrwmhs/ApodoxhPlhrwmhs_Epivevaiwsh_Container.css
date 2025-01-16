@@ -1,0 +1,132 @@
+/* Κεντρικό Πλαίσιο */
+.apodoxh-plhrwmhs-container {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+/* Τίτλος στο κέντρο */
+.apodoxh-plhrwmhs-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Εικονίδιο Επιτυχίας */
+.apodoxh-plhrwmhs-success-icon {
+    color: green;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Περιγραφή */
+.apodoxh-plhrwmhs-info-text {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Σύνδεσμος PDF */
+.apodoxh-plhrwmhs-pdf-link {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.apodoxh-plhrwmhs-download-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Κείμενο Αναμονής */
+.apodoxh-plhrwmhs-waiting-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.apodoxh-plhrwmhs-wait-icon {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+/* Κουμπιά στο κέντρο */
+.apodoxh-plhrwmhs-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    gap: 100px;
+}
+
+.apodoxh-plhrwmhs-btn {
+    background-color: #1981ef;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.apodoxh-plhrwmhs-btn:hover {
+    background-color: #145b9f;
+    color: #fff;
+}
+
+/* Ευχαριστήριο μήνυμα */
+.apodoxh-plhrwmhs-thank-you {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.care-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    vertical-align: center;
+}
+
+/* Στυλ για τις λεπτομέρειες πληρωμής */
+.apodoxh-plhrwmhs-details {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+.apodoxh-plhrwmhs-details-title {
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.apodoxh-plhrwmhs-details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.apodoxh-plhrwmhs-details strong {
+    font-weight: bold;
+    color: #000;
+}

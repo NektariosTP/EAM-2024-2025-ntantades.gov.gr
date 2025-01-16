@@ -1,0 +1,11 @@
+.ad-creation-form {
+  min-width: 800px;
+}
+
+label {
+margin-top: 20px;
+}
+
+.button-group-nannies-ad-creation button{
+  height: 75px;
+}
