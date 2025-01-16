@@ -355,7 +355,7 @@ function NannyForm3() {
       {renderFileInput("Πιστοποιητικό Εκπαίδευσης(*)", "educationCertification")}
 
       <label className="nanny-label">Ενδιαφέρεστε για Πρώτες Βοήθειες;</label>
-        <div className="radio-group">
+        <div className="radio-group1">
           <label className="nanny-label">
             <input className="input-nanny"
               type="radio"

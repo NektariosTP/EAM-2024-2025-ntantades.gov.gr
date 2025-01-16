@@ -1,0 +1,526 @@
+/* Κεντρική Διάταξη */
+.idiotika-layout-profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+/* Πλαίσιο Συμφωνητικών */
+.idiotika-container-profile {
+    width: 66%; /* 2/3 της σελίδας */
+    max-width: 1000px; /* Μέγιστο πλάτος */
+    padding: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Τίτλος */
+.idiotika-title-profile {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Αναζήτηση */
+.idiotika-search-container {
+    margin-bottom: 15px;
+}
+
+.idiotika-search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Dropdown Menu */
+.idiotika-sort-dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.idiotika-sort-dropdown-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.idiotika-sort-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.idiotika-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.idiotika-dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* Λίστα Συμφωνητικών */
+.idiotika-list-profile {
+    margin-top: -5px;
+    border: 1px solid #d5f3ff;
+}
+
+.idiotika-item-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Ημερομηνία Συμφωνητικού */
+.idiotika-date-block-profile {
+    background-color: #add8e6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Περιεχόμενο Συμφωνητικού */
+.idiotika-contentt-profile {
+    text-align: left;
+    width: 100%;
+}
+
+.bold-textt-profile {
+    font-size: bold;
+}
+
+
+
+/* Όνομα Νταντάς */
+.idiotika-nanny-name-profile {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.idiotika-nanny-name-profile:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Εικόνα Κατάστασης */
+.idiotika-wait-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Κουμπιά Ενεργειών */
+.idiotika-action-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.idiotika-action-buttons-profile {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-left: auto; /* Push buttons to the right if needed */
+}
+
+.idiotika-action-details-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #9cd4ed;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.idiotika-action-profile:hover {
+    background-color: #176a1b;
+}
+
+.idiotika-envelope-icon {
+    margin-right: 8px;
+}
+
+/* Κουμπιά Κάτω από το Πλαίσιο */
+.idiotika-buttons-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Increase the space above */
+    margin-bottom: 30px; /* Increase the space below */
+    width: 100%;
+    gap: 20px; /* Add space directly between buttons */
+}
+
+
+.edit-button-profile{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 20%;
+}
+
+.edit-button-profile:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button-profile {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 20%;
+    
+}
+
+.cancel-button-profile:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Σχεδιασμός */
+@media (max-width: 768px) {
+    .idiotika-container {
+        width: 95%; /* Στενότερο πλαίσιο σε κινητά */
+    }
+
+    .idiotika-item {
+        flex-direction: column;
+    }
+
+    .idiotika-sort-dropdown-container {
+        justify-content: flex-start;
+    }
+}
+
+/* Popup Overlay */
+.idiotika-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.idiotika-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
+
+.idiotika-popup-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.idiotika-popup-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none; /* Απενεργοποίηση αλλαγής μεγέθους */
+}
+
+.idiotika-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.idiotika-send-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.idiotika-send-btn:hover {
+    background-color: #2c9e32;
+}
+
+.idiotika-cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.idiotika-cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Success Popup */
+.idiotika-success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    font-size: 1rem;
+    animation: fade-in-out 3s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.finish-button-profile{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 32%;
+}
+
+.finish-button-profile:hover {
+    background-color: #0056b3;
+}
+
+
+.view-all-appointments, .view-all-notifications {
+    text-align: left;
+    margin-top: 15px; /* Adjust margin as needed */
+}
+
+/* Notifications List */
+.idiotika-list-notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between notifications */
+  }
+  
+  /* Individual Notification Items */
+  .idiotika-item-notifications {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-left: 5px solid #d3d3d3; /* Left border to distinguish items */
+  }
+  
+  /* Date Block */
+  .idiotika-date-block-notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 70px;
+    text-align: center;
+    margin-right: 15px;
+  }
+  
+  .idiotika-date-block-notifications .date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .idiotika-date-block-notifications .time {
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  /* Notification Content */
+  .idiotika-content-notifications {
+    flex-grow: 1;
+  }
+  
+  .notification-message {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* View All Notifications Link */
+  .view-all-notifications {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .view-all-notifications a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .view-all-notifications a:hover {
+    text-decoration: underline;
+  }
+
+  .view-all-appointments {
+    margin-top: 20px; /* Consistent top margin */
+    text-align: left;
+}
+
+.view-all-appointments a {
+    font-size: 1rem; /* Match font size */
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-all-appointments a:hover {
+    text-decoration: underline;
+}
+
+.idiotika-layout-profile {
+    display: flex;
+    justify-content: space-between; /* Ensure spacing between main content and sidebar */
+    margin-top: 1%;
+    gap: 20px; /* Space between sections */
+}
+
+/* Right Sidebar */
+.idiotika-sidebar-profile {
+    width: 25%; /* Sidebar occupies 25% of the space */
+    max-width: 300px;
+    padding: 20px;
+    background-color: #e6e6e6; /* Sidebar background */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Profile Picture */
+.sidebar-profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3; /* Placeholder image background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.edit-myprofile-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-myprofile-button:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar Content */
+.sidebar-content-profile {
+    margin-top: 10px;
+}
+
+.sidebar-content-profile h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar-content-profile p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.sidebar-content-profile strong {
+    font-weight: bold;
+}
+
+.sidebar-content-profile em {
+    font-style: italic;
+}
+
+.sidebar-content-profile hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.idiotika-main-content {
+    display: flex;
+    flex-direction: row; /* Ensure main container and sidebar are side by side */
+    justify-content: space-between; /* Distribute space between main and sidebar */
+    width: 100%;
+    gap: 20px; /* Space between the main container and sidebar */
+}

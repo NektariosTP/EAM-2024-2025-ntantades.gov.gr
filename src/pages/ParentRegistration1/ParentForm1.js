@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./NannyForm1.css";
+import "./ParentForm1.css";
 import { useNavigate } from "react-router-dom";
 
-function NannyForm1() {
+function ParentForm1() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
@@ -16,7 +16,6 @@ function NannyForm1() {
     amka: "",
     dou: "",
     maritalStatus: "",
-    isParent: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -28,7 +27,7 @@ function NannyForm1() {
 
   useEffect(() => {
     // Load saved form data from localStorage when the component mounts
-    const savedData = localStorage.getItem("nannyFormData");
+    const savedData = localStorage.getItem("parentFormData");
     if (savedData) {
       setFormData(JSON.parse(savedData));
     }
@@ -66,7 +65,7 @@ function NannyForm1() {
     setFormData(updatedFormData);
   
     // Store updated form data in localStorage
-    localStorage.setItem("nannyFormData", JSON.stringify(updatedFormData));
+    localStorage.setItem("parentFormData", JSON.stringify(updatedFormData));
   
     setErrors((prevErrors) => {
       const updatedErrors = { ...prevErrors };
@@ -106,11 +105,10 @@ function NannyForm1() {
       amka: "",
       dou: "",
       maritalStatus: "",
-      isParent: "",
     });
     setErrors({});
     setTouched({});
-    localStorage.removeItem("nannyFormData");
+    localStorage.removeItem("parentFormData");
   };
 
   const handleSubmit = (e) => {
@@ -132,7 +130,7 @@ function NannyForm1() {
     if (Object.keys(newErrors).length === 0) {
       console.log("Form Data Submitted: ", formData);
       //localStorage.removeItem("nannyFormData");
-      navigate("/Ntantades/Eggrafi/2");
+      navigate("/Goneis/Eggrafi/2");
     } else {
       console.log("Validation Errors: ", newErrors);
     }
@@ -151,7 +149,7 @@ function NannyForm1() {
       <h1>1.Συμπλήρωση Προσωπικών Στοιχείων</h1>
       <p> Συμπληρώστε τα παρακάτω προσωπικά στοιχεία. Στα πεδία όπου υπάρχει (*), 
         σημαίνει ότι η συμπλήρωση στοιχείου είναι υποχρεωτική.</p>
-      <label className="label-nanny">Όνομα (*)</label>
+      <label className="label-nanny-register">Όνομα (*)</label>
       <div className="hint">Μόνο ελληνικοί χαρακτήρες</div>
       <input
         type="text"
@@ -165,7 +163,7 @@ function NannyForm1() {
       {errors.firstName && <div className="error-message">{errors.firstName}</div>}
       
 
-      <label className="label-nanny">Επώνυμο (*)</label>
+      <label className="label-nanny-register">Επώνυμο (*)</label>
       <div className="hint">Μόνο ελληνικοί χαρακτήρες</div>
       <input
         type="text"
@@ -179,7 +177,7 @@ function NannyForm1() {
       {errors.lastName && <div className="error-message">{errors.lastName}</div>}
       
 
-      <label className="label-nanny">Πατρώνυμο (*)</label>
+      <label className="label-nanny-register">Πατρώνυμο (*)</label>
       <div className="hint">Μόνο ελληνικοί χαρακτήρες</div>
       <input
         type="text"
@@ -193,7 +191,7 @@ function NannyForm1() {
       {errors.patronymic && <div className="error-message">{errors.patronymic}</div>}
       
 
-      <label className="label-nanny">Μητρώνυμο (*)</label>
+      <label className="label-nanny-register">Μητρώνυμο (*)</label>
       <div className="hint">Μόνο ελληνικοί χαρακτήρες</div>
       <input
         type="text"
@@ -206,9 +204,9 @@ function NannyForm1() {
       />
       {errors.motherName && <div className="error-message">{errors.motherName}</div>}
 
-      <label className="label-nanny">Φύλο (*)</label>
+      <label className="label-nanny-register">Φύλο (*)</label>
       <div className="radio-group1">
-        <label className="label-nanny">
+        <label className="label-nanny-register">
           <input className="input-nanny"
             type="radio"
             name="gender"
@@ -218,7 +216,7 @@ function NannyForm1() {
           />
           Άνδρας
         </label>
-        <label className="label-nanny">
+        <label className="label-nanny-register">
           <input className="input-nanny"
             type="radio"
             name="gender"
@@ -231,9 +229,9 @@ function NannyForm1() {
       </div>
       {errors.gender && <span className="error-message">{errors.gender}</span>}
 
-      <label className="label-nanny">Έτος Γέννησης (*)</label>
+      <label className="label-nanny-register">Ημερομηνία Γέννησης (*)</label>
       <input
-        type="number"
+        type="date"
         name="birthYear"
         value={formData.birthYear}
         onChange={handleChange}
@@ -243,7 +241,7 @@ function NannyForm1() {
       />
       {errors.birthYear && <div className="error-message">{errors.birthYear}</div>}
 
-      <label className="label-nanny">Αριθμός Ταυτότητας (*)</label>
+      <label className="label-nanny-register">Αριθμός Ταυτότητας (*)</label>
       <input
         type="text"
         name="idNumber"
@@ -254,7 +252,7 @@ function NannyForm1() {
       />
       {errors.idNumber && <div className="error-message">{errors.idNumber}</div>}
 
-      <label className="label-nanny">Αριθμός Φορολογικού Μητρώου (ΑΦΜ) (*)</label>
+      <label className="label-nanny-register">Αριθμός Φορολογικού Μητρώου (ΑΦΜ) (*)</label>
       <input
         type="text"
         name="taxNumber"
@@ -265,7 +263,7 @@ function NannyForm1() {
       />
       {errors.taxNumber && <div className="error-message">{errors.taxNumber}</div>}
 
-      <label className="label-nanny">AMKA (*)</label>
+      <label className="label-nanny-register">AMKA (*)</label>
       <input
         type="text"
         name="amka"
@@ -276,7 +274,7 @@ function NannyForm1() {
       />
       {errors.amka && <div className="error-message">{errors.amka}</div>}
 
-      <label className="label-nanny">ΔΟΥ (*)</label>
+      <label className="label-nanny-register">ΔΟΥ (*)</label>
       <select
         name="dou"
         value={formData.dou}
@@ -405,7 +403,7 @@ function NannyForm1() {
       </select>
       {errors.dou && <div className="error-message">{errors.dou}</div>}
 
-      <label className="label-nanny">Οικογενειακή Κατάσταση (*)</label>
+      <label className="label-nanny-register">Οικογενειακή Κατάσταση (*)</label>
       <select
         name="maritalStatus"
         value={formData.maritalStatus}
@@ -422,31 +420,6 @@ function NannyForm1() {
         <div className="error-message">{errors.maritalStatus}</div>
       )}
 
-    <label className="label-nanny">Είστε γονέας; (*)</label>
-      <div className="radio-group1">
-        <label className="label-nanny">
-          <input className="input-nanny"
-            type="radio"
-            name="isParent"
-            value="Ναι"
-            checked={formData.isParent === "Ναι"}
-            onChange={handleChange}
-          />
-          Ναι
-        </label>
-        <label className="label-nanny">
-          <input className="input-nanny"
-            type="radio"
-            name="isParent"
-            value="Όχι"
-            checked={formData.isParent === "Όχι"}
-            onChange={handleChange}
-          />
-          Όχι
-        </label>
-      </div>
-      {errors.isParent && <div className="error-message">{errors.isParent}</div>}
-
       <div className="button-group1-nannies">
         <button type="button" className="clear-button" onClick={handleClearForm}>
           Εκκαθάριση Φόρμας
@@ -459,5 +432,5 @@ function NannyForm1() {
   );
 }
 
-export default NannyForm1;
+export default ParentForm1;
 

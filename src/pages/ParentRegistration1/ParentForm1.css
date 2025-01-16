@@ -8,9 +8,10 @@
   text-align: left; 
 }
 
-.label-nanny {
+.label-nanny-register {
+  margin-top: 1%;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 1%;
   font-weight: bold;
 }
 
@@ -52,7 +53,6 @@
 .hint {
   font-size: 0.8rem;
   color: black;
-  margin-top: 4px;
 }
 
 h1{

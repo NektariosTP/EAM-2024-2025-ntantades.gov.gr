@@ -1,0 +1,35 @@
+.tabs-header {
+    display: flex;
+    justify-content: flex-start; /* Align tabs to the left */
+    gap: 20px; /* Increase spacing between tabs */
+    margin-bottom: 20px; /* Add some margin between tabs and content */
+    margin-left: 1%;
+  }
+  
+  .tab {
+    padding: 10px 20px; /* Increase padding for larger tabs */
+    font-size: 18px; /* Increase font size for larger text */
+    cursor: pointer;
+    border: 2px solid #007bff; /* Thicker border for emphasis */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    background-color: #f1f5f9; /* Light neutral background */
+    color: #007bff; /* Blue text color */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+  }
+  
+  .tab:hover {
+    background-color: #cce5ff; /* Lighter blue on hover */
+    color: #0056b3; /* Darker blue text on hover */
+  }
+  
+  .tab.active {
+    background-color: #007bff; /* Active tab background */
+    color: #fff; /* Active tab text color */
+    border-color: #0056b3; /* Darker blue border for active tab */
+  }
+  
+  .tabs-content {
+    margin-top: 20px; /* Add space between tabs and content */
+  }
+  
