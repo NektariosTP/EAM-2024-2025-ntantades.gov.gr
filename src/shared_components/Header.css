@@ -51,24 +51,11 @@
     z-index: 1000;
 }
 
-.popup {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    min-width: 400px;
-    height: 300px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
 .popup-header {
     margin-bottom: 30px;
 }
 
-.popup-tab {
+.popup-tab1 {
     width: 120px;
     margin-left: 5px;
     margin-right: 5px;
@@ -77,25 +64,25 @@
     flex: 1;
     background-color: #9cd4ed;
     border: none;
+    border-radius: 10px;
     padding: 10px;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
 }
 
-.popup-tab:hover {
-    font-weight: bold;
-    color: white;
-    border-bottom: 2px solid #0065b3;
-}
-
-.popup-tab.active {
+.popup-tab1:hover {
     font-weight: bold;
     border-bottom: 2px solid #0065b3;
 }
 
-.signup-options button {
-    margin-top: 40px;
+.popup-tab1.active {
+    font-weight: bold;
+    border-bottom: 2px solid #0065b3;
+}
+
+.govgr-btn {
+    margin-top: 30px;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -104,6 +91,22 @@
     cursor: pointer;
     width: 80%;
     height: 30%;
+}
+
+.signup-options {
+    margin-top: 50px;
+}
+.signup-options button {
+    margin: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    height: 30%;
+    font-size: 16px;
 }
 
 .signup-options button:hover {
@@ -120,6 +123,10 @@
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative; /* Ensures child elements like the close button are positioned relative to the popup */
+    min-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .close-btn {
@@ -137,4 +144,61 @@
 
 .close-btn:hover {
     color: white;
+}
+
+
+.login-section label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.govgr-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.govgr-btn:hover {
+    background-color: #0056b3;
+}
+
+.govgr-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error-text-log-in {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }

@@ -1,29 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./NavMenu.css";
 
 function NavMenu() {
+    const isParentLoggedIn = localStorage.getItem("isParentLoggedIn") === "true";
+    const isNannyLoggedIn = localStorage.getItem("isNannyLoggedIn") === "true";
+    const [showPopup, setShowPopup] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [emailError, setEmailError] = useState("");
+    const [passwordError, setPasswordError] = useState("");
+    const navigate = useNavigate();
+    const togglePopup = () => setShowPopup(!showPopup);
+
+    const handleLogin = (role) => {
+        let valid = true;
+
+        if (!email.trim()) {
+            setEmailError("Το email είναι υποχρεωτικό.");
+            valid = false;
+        } else {
+            setEmailError("");
+        }
+
+        if (!password.trim()) {
+            setPasswordError("Το συνθηματικό είναι υποχρεωτικό.");
+            valid = false;
+        } else {
+            setPasswordError("");
+        }
+
+        if (!valid) return;
+
+        if (role === "Γονέας") {
+            localStorage.setItem("isParentLoggedIn", true);
+        } else if (role === "Νταντά") {
+            localStorage.setItem("isNannyLoggedIn", true);
+        }
+        window.location.reload();
+    };
+
     return (
         <div className="nav-menu">
             <div className="menu-column">
                 <h3>Γονείς</h3>
                 <ul>
-                    <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
-                    <li onClick={() => window.location.href = "/Goneis/Αggelies"}>Αναζήτηση Νταντάδων</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Πληρωμή Νταντάς</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Επεξεργασία Συνεργασίας</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Ιστορικό Αιτήσεων</li>
+                    {isParentLoggedIn ? (
+                        <>
+                            <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
+                            <li onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</li>
+                            <li onClick={() => window.location.href = "/Goneis/Profil/Synergasies"}>Οι Συνεργασίες Μου</li>
+                            <li onClick={() => window.location.href = "/istoriko/plhrwmes"}>Πληρωμή Νταντάς</li>
+                            <li onClick={() => window.location.href = "/Goneis"}>Ιστορικό Αιτήσεων</li>
+                        </>
+                    ) : (
+                        <>
+                            <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
+                            <li onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</li>
+                            <li onClick={togglePopup}>Πληρωμή Νταντάς</li>
+                            <li onClick={togglePopup}>Επεξεργασία Συνεργασίας</li>
+                            <li onClick={togglePopup}>Ιστορικό Αιτήσεων</li>
+                        </>
+                    )}
                 </ul>
             </div>
             <div className="menu-column">
                 <h3>Νταντάδες</h3>
                 <ul>
-                    <li onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</li>
-                    <li onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Δημιουργία Αγγελίας</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Ραντεβού με Γονείς</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Αποδοχή Πληρωμής</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Ιστορικό Αιτήσεων</li>
-                    <li onClick={() => window.location.href = "/Goneis"}>Αξιολόγηση Προφίλ</li>
+                    {isNannyLoggedIn ? (
+                        <>
+                            <li onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Dimiourgia_Aggelias"}>Δημιουργία Αγγελίας</li>
+                            <li onClick={() => window.location.href = "/istorikoo/rantevou/prosexws"}>Ραντεβού με Γονείς</li>
+                            <li onClick={() => window.location.href = "/istorikoo/plhrwmes/prosexws"}>Αποδοχή Πληρωμής</li>
+                            <li onClick={() => window.location.href = "/istorikoo"}>Ιστορικό Αιτήσεων</li>
+                            <li onClick={() => window.location.href = "/istorikoo/aksiologhseis"}>Αξιολόγηση Προφίλ</li>
+                        </>
+                    ) : (
+                        <>
+                            <li onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</li>
+                            <li onClick={togglePopup}>Δημιουργία Αγγελίας</li>
+                            <li onClick={togglePopup}>Ραντεβού με Γονείς</li>
+                            <li onClick={togglePopup}>Αποδοχή Πληρωμής</li>
+                            <li onClick={togglePopup}>Ιστορικό Αιτήσεων</li>
+                            <li onClick={togglePopup}>Αξιολόγηση Προφίλ</li>
+                        </>
+                    )}
                 </ul>
             </div>
             <div className="menu-column">
@@ -55,6 +120,83 @@ function NavMenu() {
                     </li>
                 </ul>
             </div>
+
+            {showPopup && (
+                <div className="popup-overlay" onClick={togglePopup}>
+                    <div className="popup" onClick={(e) => e.stopPropagation()}>
+                        <button className="close-btn" onClick={togglePopup}>×</button>
+                        <div className="popup-header">
+                            <button
+                                className={`popup-tab1 ${isLogin ? "active" : ""}`}
+                                onClick={() => setIsLogin(true)}
+                            >
+                                Σύνδεση
+                            </button>
+                            <button
+                                className={`popup-tab1 ${!isLogin ? "active" : ""}`}
+                                onClick={() => setIsLogin(false)}
+                            >
+                                Εγγραφή
+                            </button>
+                        </div>
+                        {isLogin ? (
+                            <div className="login-section">
+                                <div className="govgr-card__content">
+                                    <img
+                                        style={{
+                                            maxHeight: "80px",
+                                            maxWidth: "90%",
+                                            display: "block",
+                                            margin: "auto",
+                                            textAlign: "center",
+                                            objectFit: "contain",
+                                        }}
+                                        alt="bank logos"
+                                        src="/taxisnet.png"
+                                    />
+                                </div>
+                                Email<br/>
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    className="login-input"
+                                />
+                                {emailError && <div className="error-text-log-in">{emailError}</div>}
+                                <br/>Συνθηματικό<br/>
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    className="login-input"
+                                />
+                                {passwordError && <div className="error-text-log-in">{passwordError}</div>}
+                                <div className="login-buttons">
+                                    <button
+                                        className="govgr-btn"
+                                        onClick={() => handleLogin("Γονέας")}
+                                    >
+                                        Σύνδεση ως Γονέας
+                                    </button>
+                                    <button
+                                        className="govgr-btn"
+                                        onClick={() => handleLogin("Νταντά")}
+                                    >
+                                        Σύνδεση ως Νταντά
+                                    </button>
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="signup-options">
+                                <button onClick={() => navigate("/Goneis/Eggrafi")}>Εγγραφή ως Γονέας</button>
+                                <button onClick={() => navigate("/Ntantades/Eggrafi")}>Εγγραφή ως Νταντά</button>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

@@ -1,0 +1,110 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    height: 130px;
+}
+
+/* Logo Styling */
+.logo {
+    width: 200px;
+    padding: 10px;
+    height: auto;
+    margin-left: 0;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* User Menu Container */
+.user-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* User Info Section */
+.user-info {
+    display: flex;
+    align-items: center;
+    background-color: #9cd4ed;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* User Icon Styling */
+.user-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.icon-image {
+    width: 70%;
+    height: auto;
+}
+
+/* User Text */
+.user-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 10px;
+}
+
+/* Menu Container */
+.menu {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styling */
+.menu-options {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%; /* Same width as parent */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    text-align: center; /* Center align text */
+}
+
+.menu-options .menu-item {
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+.menu-options .menu-item:hover {
+    background-color: #dcdcdc;
+    font-weight: bold;
+}

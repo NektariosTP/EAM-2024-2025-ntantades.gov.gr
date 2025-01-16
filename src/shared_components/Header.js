@@ -5,9 +5,40 @@ import "./Header.css";
 function Header() {
     const [showPopup, setShowPopup] = useState(false);
     const [isLogin, setIsLogin] = useState(true);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [emailError, setEmailError] = useState("");
+    const [passwordError, setPasswordError] = useState("");
     const navigate = useNavigate();
 
     const togglePopup = () => setShowPopup(!showPopup);
+
+    const handleLogin = (role) => {
+        let valid = true;
+
+        if (!email.trim()) {
+            setEmailError("Το email είναι υποχρεωτικό.");
+            valid = false;
+        } else {
+            setEmailError("");
+        }
+
+        if (!password.trim()) {
+            setPasswordError("Το συνθηματικό είναι υποχρεωτικό.");
+            valid = false;
+        } else {
+            setPasswordError("");
+        }
+
+        if (!valid) return;
+
+        if (role === "Γονέας") {
+            localStorage.setItem("isParentLoggedIn", true);
+        } else if (role === "Νταντά") {
+            localStorage.setItem("isNannyLoggedIn", true);
+        }
+        window.location.reload();
+    };
 
     return (
         <header className="header">
@@ -21,53 +52,71 @@ function Header() {
                         <button className="close-btn" onClick={togglePopup}>×</button>
                         <div className="popup-header">
                             <button
-                                className={`popup-tab ${isLogin ? "active" : ""}`}
+                                className={`popup-tab1 ${isLogin ? "active" : ""}`}
                                 onClick={() => setIsLogin(true)}
                             >
                                 Σύνδεση
                             </button>
                             <button
-                                className={`popup-tab ${!isLogin ? "active" : ""}`}
+                                className={`popup-tab1 ${!isLogin ? "active" : ""}`}
                                 onClick={() => setIsLogin(false)}
                             >
                                 Εγγραφή
                             </button>
                         </div>
                         {isLogin ? (
-                            <div className="govgr-card govgr-card--border govgr-card--border-light" style={{ height: "100%" }}>
-                                <div className="govgr-card__body">
-                                    <div className="govgr-card__content">
-                                        <img
-                                            style={{
-                                                maxHeight: "80px",
-                                                maxWidth: "90%",
-                                                display: "block",
-                                                margin: "auto",
-                                                textAlign: "center",
-                                                objectFit: "contain",
-                                            }}
-                                            alt="bank logos"
-                                            src="/taxisnet.png"
-                                        />
-                                    </div>
-                                    <div className="govgr-card__action" style={{ justifyContent: "center" }}>
-                                        <button
-                                            className="govgr-btn govgr-btn-primary govgr-print-hidden"
-                                            style={{ maxWidth: "fit-content" }}
-                                        >
-                                            Σύνδεση <br /> (Κωδικοί Taxisnet)
-                                        </button>
-                                    </div>
+                            <div className="login-section">
+                                <div className="govgr-card__content">
+                                    <img
+                                        style={{
+                                            maxHeight: "80px",
+                                            maxWidth: "90%",
+                                            display: "block",
+                                            margin: "auto",
+                                            textAlign: "center",
+                                            objectFit: "contain",
+                                        }}
+                                        alt="bank logos"
+                                        src="/taxisnet.png"
+                                    />
+                                </div>
+                                Email<br/>
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    className="login-input"
+                                />
+                                {emailError && <div className="error-text-log-in">{emailError}</div>}
+                                <br/>Συνθηματικό<br/>
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    className="login-input"
+                                />
+                                {passwordError && <div className="error-text-log-in">{passwordError}</div>}
+                                <div className="login-buttons">
+                                    <button
+                                        className="govgr-btn"
+                                        onClick={() => handleLogin("Γονέας")}
+                                    >
+                                        Σύνδεση ως Γονέας
+                                    </button>
+                                    <button
+                                        className="govgr-btn"
+                                        onClick={() => handleLogin("Νταντά")}
+                                    >
+                                        Σύνδεση ως Νταντά
+                                    </button>
                                 </div>
                             </div>
                         ) : (
                             <div className="signup-options">
-                                <button onClick={() => navigate("/Goneas/Eggrafi")}>
-                                    Εγγραφή ως Γονέας
-                                </button>
-                                <button onClick={() => navigate("/Ntantades/Eggrafi")}>
-                                    Εγγραφή ως Νταντά
-                                </button>
+                                <button onClick={() => navigate("/Goneis/Eggrafi")}>Εγγραφή ως Γονέας</button>
+                                <button onClick={() => navigate("/Ntantades/Eggrafi")}>Εγγραφή ως Νταντά</button>
                             </div>
                         )}
                     </div>
