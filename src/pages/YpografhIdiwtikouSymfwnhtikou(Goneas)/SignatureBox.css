@@ -1,0 +1,43 @@
+.signature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Αριστερή στοίχιση */
+    margin-left: 10% ;
+    padding: 1rem;
+    width: 90%;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signature-canvas {
+    border: 2px solid #87ceeb;
+    background-color: #e6f7ff;
+    cursor: crosshair;
+  }
+  
+  .signature-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px; /* Ίδιο πλάτος με το canvas */
+    margin-top: 0.7rem;
+  }
+  
+  .clear-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ff6347;
+    padding: 0.5rem 1rem;
+    margin-top: 1%;
+    margin-right: 39%;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    align-self: flex-end; /* Τοποθέτηση κάτω από το δεξί μέρος του canvas */
+  }
+  
+  .clear-button:hover {
+    background-color: #ff6347;
+  }
+  

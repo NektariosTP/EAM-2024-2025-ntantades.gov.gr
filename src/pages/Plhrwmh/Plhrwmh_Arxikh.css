@@ -1,32 +1,64 @@
+/* Κεντρικό πλαίσιο */
 .plhrwmh-container {
-    margin: 1% 15% 1%;
-    height: 500px; /* Μειωμένο ύψος πλαισίου */
+    margin: 1% 15%;
+    height: auto;
     display: flex;
     flex-direction: column; /* Κάθετη διάταξη */
-    align-items: center;
-    background-color: #e6e6e6;
+    align-items: center; /* Κεντράρισμα περιεχομένου */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #000;
+    border-radius: 5px;
     font-family: Arial, sans-serif;
-    padding: 5px;
+    padding: 20px;
 }
 
-.plhrwmh-title {
+/* Τίτλος */
+.plhrwmh title {
     font-size: 1.8rem;
-    margin-bottom: 0%; /* Μειωμένη απόσταση από την εικόνα */
+    text-align: center; /* Κεντράρισμα τίτλου */
 }
 
+/* Εικόνα */
 .plhrwmh-content {
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center; /* Κεντράρει την εικόνα */
+    justify-content: center; /* Κεντράρισμα εικόνας */
     align-items: center;
-    margin: -6.5% 1%; /* Προσαρμοσμένο για να διατηρείται η εικόνα κεντραρισμένη */
+    margin: 10px 0;
 }
 
 .payment-img {
-    width: 80%; /* Η εικόνα καλύπτει το 80% του πλάτους */
-    height: auto; /* Αυτόματη προσαρμογή ύψους για διατήρηση αναλογιών */
-    max-height: 350px; /* Μειωμένο μέγιστο ύψος */
-    object-fit: cover; /* Διατηρεί την αισθητική της εικόνας */
+    width: 80%; /* Προσαρμογή πλάτους */
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    margin-top: 5%;
+    margin-bottom: 20px;
 }
+
+/* Κουμπιά */
+.plhrwmh-buttons-container {
+    display: flex;
+    justify-content: center; /* Κεντράρισμα κουμπιών */
+    align-items: center;
+    width: 100%;
+    margin-top: -2%;
+}
+
+/* Κουμπιά - Προσαρμογή για ευκολότερη διαχείριση */
+.plhrwmh-buttons-container button {
+    padding: 10px 20px;
+    margin: 0 10px; /* Κενό μεταξύ των κουμπιών */
+    border: none;
+    border-radius: 5px;
+    background-color: #ccf5cc;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plhrwmh-buttons-container button:hover {
+    background-color: #80ee80; /* Hover effect */
+}
+

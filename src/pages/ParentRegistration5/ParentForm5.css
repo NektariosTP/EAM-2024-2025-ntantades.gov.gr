@@ -1,0 +1,88 @@
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .submit-box p {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .button-group5-nannies {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10%; /* Add space between buttons */
+    max-width: 25%;
+    margin-left: 40%;
+  }
+  
+  .button-group5-nannies button {
+    margin: 16%;
+    font-size: 1.1rem; 
+    padding: 10px 20px; 
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; 
+    color: white;
+    border: none;
+    width: auto;
+  }
+  
+  .button-group5-nannies .back-button {
+    background-color: #f28b82; /* Red for Cancel */
+  }
+  
+  .button-group5-nannies .back-button:hover {
+    background-color: #d9534f; /* Darker red on hover */
+  }
+  
+  .button-group5-nannies .view-button {
+    background-color: #007bff; /* Blue for View */
+  }
+  
+  .button-group5-nannies .view-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .button-group5-nannies .submit-button {
+    background-color: #28a745; /* Green for Submit */
+  }
+  
+  .button-group5-nannies .submit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .button-group5-nannies-back {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  .button-group5-nannies-back button {
+    font-size: 1.1rem; 
+    padding: 10px 20px; 
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+  }

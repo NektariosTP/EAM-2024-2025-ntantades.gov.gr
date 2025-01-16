@@ -322,8 +322,7 @@
   gap: 20px;
 }
 
-.filtered-card {  
-  /*margin-bottom: 20%;*/
+.filtered-card {
   cursor: pointer;
   border: 1px solid #d0d0d0;
   border-radius: 10px;

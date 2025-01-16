@@ -1,0 +1,39 @@
+/* Κοντέινερ για το checkbox */
+.button-apodoxhs-container {
+    display: flex;
+    align-items: center;
+    gap: 5%; /* Απόσταση μεταξύ checkbox και κειμένου */
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+}
+
+/* Στυλ για το checkbox */
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #9a9a9a; /* Ανοιχτό γκρι περίγραμμα */
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox.checked {
+    background-color: #007bff; /* Μπλε φόντο όταν είναι επιλεγμένο */
+    border-color: #0056b3; /* Σκούρο μπλε περίγραμμα */
+}
+
+.checkmark {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Στυλ για την ετικέτα */
+.checkbox-label1 {
+    margin-left: 10px; /* Απόσταση από την αριστερή πλευρά */
+    font-size: 1.2rem; /* Μέγεθος γραμματοσειράς */
+    color: #333; /* Χρώμα κειμένου */
+}

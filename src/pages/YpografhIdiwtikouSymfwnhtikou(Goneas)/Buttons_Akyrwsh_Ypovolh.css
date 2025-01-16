@@ -1,0 +1,72 @@
+.buttons-container1 {
+    display: flex;
+    justify-content: space-between; /* Χωρίζει τα κουμπιά */
+    align-items: center;
+    padding: 10px 100px; /* Προσθέτει περιθώρια στα αριστερά και δεξιά */
+    gap: 5%;
+}
+
+.submit-button1 {
+    background-color: #1981ef;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button1.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.submit-button1:not(.disabled):hover {
+    background-color: #145b9f;
+}
+
+.button-ypovolh {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cancel1 {
+    background-color: #f28b82; /* Κόκκινο */
+    color: black;
+}
+
+.cancel1:hover{
+    background-color: #cf463a; 
+}
+
+.save1 {
+    background-color: #a9e6b7; /* Πράσινο */
+    color: black;
+}
+
+.save1:hover{
+    background-color: #21a840; 
+}
+
+.submit {
+    background-color: #79c5e9; /* Μπλε */
+    color: white;
+}
+
+.error-message1 {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-message1 p {
+    margin: 0;
+    margin-right: 12%;
+}

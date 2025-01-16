@@ -1,0 +1,60 @@
+/* Κοντέινερ για το κουμπί */
+.options-button-container-FD {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Στυλ για το κουμπί */
+.options-button-FD {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f8f9fa; /* Ανοιχτό γκρι φόντο */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    gap: 20px; /* Απόσταση μεταξύ των επιλογών */
+    transition: all 0.3s ease; /* Ομαλή μετάβαση */
+}
+
+/* Κάθε επιλογή μέσα στο κουμπί */
+.option-FD {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Μαύρο κείμενο */
+    transition: all 0.3s ease; /* Για εφέ hover */
+}
+
+/* Εικονίδιο της επιλογής */
+.option-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px; /* Απόσταση μεταξύ εικόνας και κειμένου */
+}
+
+/* Εφέ hover για κάθε επιλογή */
+.option-FD:hover {
+    text-decoration: underline; /* Υπογράμμιση */
+    color: #000000; /* Μπλε κείμενο κατά το hover */
+}
+
+/* Στυλ για το h3 της Επιβεβαίωσης Όρων */
+.confirmation-title {
+    text-align: left; /* Στοίχιση στα αριστερά */
+    margin-left: 90px; /* Απόσταση από την αριστερή πλευρά */
+    font-size: 1.2rem; /* Μέγεθος γραμματοσειράς */
+    color: #333; /* Χρώμα κειμένου */
+}
+
+.sign-title {
+    text-align: left; /* Στοίχιση στα αριστερά */
+    margin-left: 120px; /* Απόσταση από την αριστερή πλευρά */
+    font-size: 1rem; /* Μέγεθος γραμματοσειράς */
+    color: #333; /* Χρώμα κειμένου */
+}
+
+

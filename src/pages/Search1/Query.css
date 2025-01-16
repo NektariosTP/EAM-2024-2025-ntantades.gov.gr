@@ -43,6 +43,11 @@
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.query-button:hover {
+  background-color: #0065b3;
 }
 
 .query-suggestions {

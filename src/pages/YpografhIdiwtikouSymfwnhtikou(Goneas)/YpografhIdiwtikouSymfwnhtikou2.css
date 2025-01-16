@@ -1,0 +1,131 @@
+/* Στυλ πλαισίου */
+.container-symf {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 1000px;
+}
+
+/* Τίτλος */
+.title-symf {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.success-icon {
+    color: green;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Περιγραφή */
+.description-symf {
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 10%;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Σύνδεσμος λήψης */
+.download-link {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 7%;
+    color: blue;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+.download-icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Υπότιτλος */
+.sub-title-symf {
+    display: flex;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 50px;
+    color: black;
+}
+
+.wait-icon {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Κουμπιά */
+.button-section-symf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.button-return-button-symf {
+    background-color: #9cd4ed;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 70px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 0; /* Αφαίρεση εξωτερικής απόστασης */
+}
+
+
+/* Hover Εφέ */
+.button:hover {
+    background-color: #3d97d7; /* Πιο σκούρο χρώμα */
+    text-decoration: underline;
+}
+
+/* Ειδικό για το κουμπί επιστροφής */
+.button-return-button2:hover {
+    background-color: #3d97d7; /* Χρώμα Hover */
+}
+
+
+
+/* Υπόλοιπο περιεχόμενο */
+.sub-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sub-description-symf {
+    width: fit-content;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 7%;
+    margin-right: -400px;
+    font-size: 1.1rem;
+}
+
+/* Εικόνα */
+.confirm-image1 {
+    flex: 1;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    margin-bottom: 40px;
+}

@@ -1,0 +1,267 @@
+.rantevou-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2%;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.filtered-card-rantevou {
+  width: 60%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  align-self: center;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.rantevou-title1 h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5%;
+}
+
+.filtered-card-rantevou img.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.filtered-card-rantevou h3 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.filtered-card-rantevou p {
+  margin-top: 2%;
+  color: #555;
+  font-size: 0.85em;
+}
+
+.filtered-card-rantevou .rating {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.filtered-card-rantevou .rating .stars {
+  margin-left: 5px;
+  color: blue;
+}
+
+.filtered-card-rantevou .details {
+  justify-content: space-between;
+  font-size: 0.85em;
+  display: flex;
+  gap: 10px;
+  color: #444;
+}
+
+.filtered-card-rantevou .info {
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #555;
+  line-height: 1.4;
+  height: 120px; /* Set a fixed height if needed */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.form-section {
+  margin-left: 5%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.form-section input,
+.form-section select {
+  max-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.form-section input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-section div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-section p {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.bottom-text-rantevou p {
+  font-size: 1.2em;
+  margin-right: 5%;
+}
+
+.bottom-text-rantevou {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.bottom-text-rantevou p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.rantevou-button1 {
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(223, 222, 222);
+  color: #000000;
+  text-align: center;
+  align-self: center;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rantevou-button1:hover {
+  background-color: rgb(177, 177, 177);
+}
+
+.rantevou-button2 {
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rantevou-button2:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the execution mode dropdown */
+.form-section select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* Conditional display for physical meeting details */
+.date-info {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group-total {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Radio button group styling */
+.radio-group {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Custom address input styling */
+.custom-address-input {
+  align-self: flex-start;
+  min-width: 150%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 5%;
+}
+
+/* Conditional display for online meeting details */
+.online-info {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.online-info p {
+  margin-top: -2%;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.online-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.online-info a:hover {
+  text-decoration: underline;
+}
+
+.form-label-option p {
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+.rantevou-container .error-text {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}

@@ -1,6 +1,7 @@
 .buttons-container {
     display: flex;
-    justify-content: space-around; /* Χωρίζει τα κουμπιά ομοιόμορφα */
+    justify-content: center; /* Χωρίζει τα κουμπιά ομοιόμορφα */
+    align-items: center;
     margin-top: 2%;
     width: 90%;
   }
@@ -23,7 +24,7 @@
   }
   
   .payment-button:hover {
-    background-color: #80ee80; /* Πιο σκούρο πράσινο στο hover */
+    background-color: #259e29; /* Πιο σκούρο πράσινο στο hover */
   }
   
   

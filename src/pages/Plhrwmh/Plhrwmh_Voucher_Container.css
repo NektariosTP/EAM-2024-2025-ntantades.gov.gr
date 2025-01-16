@@ -1,0 +1,169 @@
+/* Κεντρικό Πλαίσιο */
+.container_ApodoxhPlhrwmhs {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+/* Τίτλος */
+.title_ApodoxhPlhrwmhs {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Φόρμα */
+.voucher-form_ApodoxhPlhrwmhs {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Φόρμα Ομάδα */
+.form-group_ApodoxhPlhrwmhs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group_ApodoxhPlhrwmhs label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group_ApodoxhPlhrwmhs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Προεπισκόπηση */
+.preview-title {
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pdf-preview {
+    height: 150px;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Ενέργειες PDF */
+.pdf-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pdf-btn {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pdf-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Κουμπιά */
+.button-section-voucher {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 5%;
+    
+}
+
+/* Κουμπί Ακύρωσης */
+.cancel-btn-voucher {
+    background-color: #f28b82;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    padding: 15px 30px; /* Αυξημένο padding */
+    font-size: 1.2rem; /* Μεγαλύτερη γραμματοσειρά */
+    border: none;
+    border-radius: 5px;
+    width: 120px; /* Πλάτος κουμπιού */
+    height: 40px; /* Ύψος κουμπιού */
+    cursor: auto;
+    text-align: center;
+    display: flex; /* Χρήση flexbox για κάθετη και οριζόντια στοίχιση */
+    align-items: center; /* Κάθετη στοίχιση */
+    justify-content: center; /* Οριζόντια στοίχιση */
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cancel-btn-voucher:hover {
+    background-color: #cf463a; /* Πιο έντονο κόκκινο */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Κουμπί Αποθήκευσης */
+.save-btn-voucherr {
+    background-color: #a9e6b7;
+    color: black;
+    transition: all 0.3s ease;
+    padding: 15px 40px; /* Αυξημένο padding */
+    font-size: 1.2rem; /* Μεγαλύτερη γραμματοσειρά */
+    border: none;
+    border-radius: 5px;
+    width: 160px; /* Πλάτος κουμπιού */
+    height: 50px; /* Ύψος κουμπιού */
+    cursor: pointer;
+    text-align: center;
+    display: flex; /* Χρήση flexbox για κάθετη και οριζόντια στοίχιση */
+    align-items: center; /* Κάθετη στοίχιση */
+    justify-content: center; /* Οριζόντια στοίχιση */
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.save-btn-voucherr:hover {
+    background-color: #21a840; /* Πιο έντονο πράσινο */
+    color: rgb(0, 0, 0);
+}
+
+/* Κουμπί Πληρωμής */
+.submit-btn-voucherr {
+    background-color: #1981ef;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 15px 40px; /* Αυξημένο padding */
+    font-size: 1.2rem; /* Μεγαλύτερη γραμματοσειρά */
+    border: none;
+    border-radius: 5px;
+    width: 180px; /* Πλάτος κουμπιού */
+    height: 70px; /* Ύψος κουμπιού */
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.submit-btn-voucherr:hover {
+    background-color: #145b9f; /* Πιο έντονο μπλε */
+    color: white;
+}

@@ -1,0 +1,117 @@
+/* Στυλ πλαισίου */
+.container {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 1000px;
+}
+
+/* Τίτλος */
+.title {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.success-icon {
+    color: green;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Περιγραφή */
+.description {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Λέξη voucher */
+.sub-description .voucher {
+    color: inherit;
+    cursor: pointer;
+}
+
+.sub-description .voucher:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Εικόνα */
+.confirm-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 20px; /* Μεταφορά στα δεξιά */
+}
+
+/* Επιπλέον περιεχόμενο */
+.sub-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-description {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* Κουμπιά */
+.button-section-ntanta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.button-return-button-ntanta {
+    background-color: #9cd4ed;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover Εφέ */
+.button-return-button-ntanta:hover {
+    background-color: #3d97d7; /* Πιο σκούρο χρώμα */
+    text-decoration: none;
+}
+
+.hands-icon {
+    margin-left: 10px;
+    width: 45px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.pay-image{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    color: black;
+}
+
+.confirm-image1 {
+    flex: 1;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    margin-bottom: 40px;
+}

@@ -1,0 +1,149 @@
+/* Κεντρικό Πλαίσιο */
+.container_ApodoxhPlhrwmhs {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+/* Τίτλος */
+.title_ApodoxhPlhrwmhs {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Εισαγωγικό Κείμενο */
+.info-text_ApodoxhPlhrwmhs {
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-top: 5%;
+}
+
+/* Τίτλος φόρμας */
+.form-title_ApodoxhPlhrwmhs {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Φόρμα */
+.payment-form_ApodoxhPlhrwmhs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Ομάδα πεδίων */
+.form-group_ApodoxhPlhrwmhs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Στοίχιση αριστερά */
+    margin-right: 5%;
+    width: 30%;
+}
+
+.form-group_ApodoxhPlhrwmhs label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left; /* Στοίχιση αριστερά */
+    width: 40%;
+}
+
+.form-group_ApodoxhPlhrwmhs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Πιστοποίηση */
+.certification-title {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Checkbox */
+.checkbox-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.checkbox-large {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.checkbox-label {
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 80%; /* Περιορίζει το πλάτος του κειμένου */
+    margin-left: -3%;
+}
+
+/* Κουμπιά */
+.button-section-forma {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn-forma, .save-btn-forma, .next-btn-forma {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* Χρώματα Κουμπιών */
+.cancel-btn-forma {
+    background-color: #f28b82; /* Κόκκινο */
+    color: black;
+}
+
+.cancel-btn-forma:hover {
+    background-color: #cf463a; 
+}
+
+/* Προσωρινή Αποθήκευση */
+.save-btn-forma {
+    background-color: #a9e6b7; /* Πράσινο */
+    color: black;
+}
+
+.save-btn-forma:hover {
+    background-color: #21a840; 
+}
+
+/* Ενεργοποίηση Voucher */
+.next-btn-forma {
+    background-color: #1981ef;
+    color: white;
+}
+
+/* Hover Εφέ για ενεργοποιημένο κουμπί */
+.next-btn-forma:hover {
+    background-color: #145b9f;
+    color: rgb(255, 255, 255);
+}
+
+/* Disabled κουμπί */
+.disabled-btn {
+    background-color: #b0b0b0 !important;
+    cursor: not-allowed;
+    color: white !important;
+}

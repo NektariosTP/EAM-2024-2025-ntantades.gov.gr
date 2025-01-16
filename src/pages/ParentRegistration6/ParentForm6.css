@@ -1,0 +1,86 @@
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: left;
+}
+
+
+.success-icon {
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    margin-left: 80%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.submit-box6 p {
+    margin-top: 4%;
+    font-size: 1em;
+}
+
+.popup6-link {
+    display: inline;
+    margin-top: 15px;
+    text-align: center;
+    color: #007bff;
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.popup6-link:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.button-group6-parents {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 6%; /* Add space between buttons */
+    max-width: 100%; /* Allow the buttons to stretch across the container */
+}
+
+.button-group6-parents button {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-grow: 1; /* Allow buttons to grow and take equal space */
+    max-width: 25%; /* Set a maximum width for larger screens */
+    font-size: 1.1rem; 
+    padding: 10px 20px; /* Increase padding */
+    border-radius: 6px; 
+    cursor: pointer; 
+    color: white;
+    background-color: #007bff;
+    border: none;
+    text-align: center; /* Ensure button text stays centered */
+    margin-top: 5%;
+}
+
+.button-group6-parents button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.checkmark6-icon{
+  max-width: 3%;
+}
+
+.download6-icon{
+    margin-bottom: -10px;
+    max-height: 30px;
+  }
+
+.nanny-success-icon{
+    margin-left: 70%;
+    max-height: 100px;
+    margin-bottom: 3%;
+}
