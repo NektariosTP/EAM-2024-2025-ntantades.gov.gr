@@ -1,0 +1,152 @@
+/* Κεντρικό Layout */
+.eidopoihseis-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+
+/* Κεντρικό Πλαίσιο */
+.eidopoihseiscontainer {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 66%; /* 2/3 της σελίδας */
+    max-width: 1000px; /* Μέγιστο πλάτος */
+    font-family: Arial, sans-serif;
+}
+
+/* Τίτλος */
+.eidopoihseistitle {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Λίστα Ειδοποιήσεων */
+.eidopoihseislist {
+    margin-top: 20px;
+}
+
+.message-item-eid {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-item-eid:last-child {
+    border-bottom: none;
+}
+
+.message-date-container-eid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.message-date-block {
+    background-color: #add8e6;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.message-date-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.message-content {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.normal-text {
+    font-weight: normal;
+}
+
+/* Στυλ για Σελιδοποίηση */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination span:hover {
+    text-decoration: underline;
+}
+
+.pagination .page-number.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pagination span.disabled {
+    pointer-events: none;
+    color: #ccc;
+}
+
+
+/* Dropdown Container */
+.sort-dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sort-dropdown-button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-icon {
+    margin-left: 10px;
+}
+
+.sort-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}

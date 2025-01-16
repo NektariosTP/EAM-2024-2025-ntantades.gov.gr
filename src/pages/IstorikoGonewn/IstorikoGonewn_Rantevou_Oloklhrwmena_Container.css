@@ -1,0 +1,297 @@
+/* Layout */
+.rantevou-layout {
+    display: flex;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.rantevou-container1 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.rantevou-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.rantevou-subtitle {
+    font-size: 1.4rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.rantevou-search-container {
+    margin-bottom: 20px;
+}
+
+/* Dropdown Sorting */
+.rantevou-sort-dropdown-container {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.rantevou-sort-dropdown-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.rantevou-sort-dropdown-button:hover {
+    background-color: #0056b3;
+}
+
+.rantevou-sort-dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.rantevou-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.rantevou-dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.rantevou-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Appointment List */
+.rantevou-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rantevou-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rantevou-date-container {
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.rantevou-date-block {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.rantevou-content {
+    flex-grow: 1;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.normal-text {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Location Link */
+.location {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.location:hover {
+    color: #0056b3;
+}
+
+/* Action Buttons */
+.rantevou-action {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.rantevou-action:hover {
+    background-color: #2e7d32;
+}
+
+.rantevou-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.complete-request-button {
+    background-color: #9cd4ed;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.complete-request-button:hover {
+    background-color: #3981ce;
+}
+
+/* Pop-up */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popup-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.popup-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+.popup-send-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-send-btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Success Popup */
+.rantevou-success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    animation: fade-in-out 3s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-number {
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.page-number.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #0056b3;
+}
+
+.page-number:hover {
+    background-color: #e0e0e0;
+}

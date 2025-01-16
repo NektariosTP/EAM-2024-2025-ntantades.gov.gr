@@ -1,0 +1,355 @@
+/* Κεντρική Διάταξη */
+.aksiologhseis-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+/* Πλαίσιο Αξιολογήσεων */
+.aksiologhseis-container {
+    width: 66%; /* 2/3 της σελίδας */
+    max-width: 1000px; /* Μέγιστο πλάτος */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Τίτλος */
+.aksiologhseis-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Αναζήτηση */
+.search-container {
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Dropdown Menu */
+.sort-dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sort-dropdown-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.sort-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* Λίστα Αξιολογήσεων */
+.reviews-list {
+    margin-top: 10px;
+    border: 1px solid #d5f3ff;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Ημερομηνία Αξιολόγησης */
+.review-date-block {
+    background-color: #add8e6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Περιεχόμενο Αξιολόγησης */
+.review-content {
+    text-align: left;
+    width: 100%;
+}
+
+.review-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.review-content p b {
+    font-weight: bold;
+}
+
+/* Κουμπιά Ενεργειών */
+.review-buttons {
+    display: flex;
+    gap: 500px;
+    margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.edit-btn {
+    background-color: #add8e6;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Μήνυμα αν δεν υπάρχουν αξιολογήσεις */
+.no-more-reviews {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+
+/* Link Effect for Name */
+.review-name {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.review-name:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Hover Effects for Buttons */
+.edit-btn:hover {
+    background-color: #49a1d7;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Σελιδοποίηση */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.pagination span.active {
+    background-color: #add8e6;
+    font-weight: bold;
+}
+
+.pagination span:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Σχεδιασμός */
+@media (max-width: 768px) {
+    .aksiologhseis-container {
+        width: 95%; /* Στενότερο πλαίσιο σε κινητά */
+    }
+
+    .review-item {
+        flex-direction: column;
+    }
+
+    .review-buttons {
+        flex-direction: column;
+    }
+
+    .sort-dropdown-container {
+        justify-content: flex-start;
+    }
+}
+
+/* Popup */
+/* Popup Modal */
+.edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.edit-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.edit-modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Επιλογή Βαθμολογίας */
+.rating-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Σχόλιο */
+.comment-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none; /* Απενεργοποίηση αλλαγής μεγέθους */
+}
+
+/* Μετρητής Χαρακτήρων */
+.char-counter {
+    text-align: right;
+    font-size: 1.0rem;
+    color: rgb(0, 0, 0); /* Κόκκινο κείμενο */
+    margin-bottom: 15px;
+}
+
+/* Κουμπιά */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.save-btn-aksi {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn-aksi {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.save-btn-aksi:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn-aksi:hover {
+    background-color: #d32f2f;
+}
+
+/* Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.save-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Stars Container */
+.stars {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* Unfilled Stars */
+.star {
+    font-size: 26px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+/* Filled Stars */
+.star.filled {
+    color: #ffc107;
+}

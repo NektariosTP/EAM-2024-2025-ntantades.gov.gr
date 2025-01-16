@@ -1,0 +1,341 @@
+/* Layout */
+.aitiseis-oloklhrwmenes-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+/* Container */
+.aitiseis-oloklhrwmenes-container {
+    width: 66%;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+.aitiseis-oloklhrwmenes-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.aitiseis-oloklhrwmenes-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/* Search Bar */
+.search-container {
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Dropdown Menu */
+.aitiseis-oloklhrwmenes-sort-dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.aitiseis-oloklhrwmenes-sort-dropdown-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.aitiseis-oloklhrwmenes-sort-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.aitiseis-oloklhrwmenes-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.aitiseis-oloklhrwmenes-dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* List */
+.aitiseis-oloklhrwmenes-list {
+    margin-top: 10px;
+}
+
+.aitiseis-oloklhrwmenes-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Date Block */
+.aitiseis-oloklhrwmenes-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.aitiseis-oloklhrwmenes-date-block {
+    background-color: #add8e6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Content */
+.aitiseis-oloklhrwmenes-content {
+    text-align: left;
+    width: 100%;
+}
+
+.aitiseis-oloklhrwmenes-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.aitiseis-oloklhrwmenes-nanny-name {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aitiseis-oloklhrwmenes-nanny-name:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.aitiseis-oloklhrwmenes-action {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+.aitiseis-oloklhrwmenes-action:hover {
+    background-color: #2c9e32;
+}
+
+.aitiseis-oloklhrwmenes-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sign-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #9cd4ed;
+    color: white;
+}
+
+.sign-button:hover {
+    background-color: #3981ce;
+}
+
+.delete-button1 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #d74339;
+    color: white;
+    margin-left: 500px;
+}
+
+.delete-button2 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #d74339;
+    color: white;
+    margin-left: 587px;
+}
+
+
+.delete-button1:hover, .delete-button2:hover {
+    background-color: #801616;
+}
+
+/* Κουμπί Αποστολής Μηνύματος */
+.aitiseis-action {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.aitiseis-action:hover {
+    background-color: #176a1b;
+}
+
+.envelope-icon {
+    margin-right: 8px;
+}
+
+/* Popup Overlay */
+.aitiseis-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.aitiseis-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
+
+.aitiseis-popup-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.aitiseis-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aitiseis-send-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aitiseis-send-btn:hover {
+    background-color: #176a1b;
+}
+
+.aitiseis-cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aitiseis-cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Επιβεβαίωση Μηνύματος */
+.aitiseis-success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    font-size: 1rem;
+    animation: fade-in-out 3s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.pagination span.active {
+    background-color: #add8e6;
+    font-weight: bold;
+}
+
+.pagination span:hover {
+    background-color: #f1f1f1;
+}
+
+.wait-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.aitiseis-no-more {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+  }

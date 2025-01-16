@@ -1,0 +1,63 @@
+.istoriko-container {
+  margin: 1% 15%;
+  padding: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6e6;
+  border: 1px solid #000;
+  font-family: Arial, sans-serif;
+}
+
+.istoriko-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Κεντράρει την εικόνα κάθετα με το κείμενο */
+  justify-content: center; /* Κεντράρει το περιεχόμενο οριζόντια */
+}
+
+.history-img {
+  margin-left: 10px; /* Απόσταση από το κείμενο */
+  width: 25px; /* Μεγαλύτερο πλάτος */
+  height: 25px; /* Μεγαλύτερο ύψος */
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 στήλες */
+  gap: 20px; /* Απόσταση μεταξύ των κουτιών */
+  margin: 20px;
+}
+
+.history-box {
+  background-color: #d5f3ff; /* Απαλό μπλε χρώμα */
+  border: 1px solid #000; /* Μαύρο περίγραμμα */
+  padding: 20px;
+  text-align: center; /* Κέντρο του περιεχομένου */
+  border-radius: 5px; /* Στρογγυλεμένες γωνίες */
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ελαφριά σκιά */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.history-box:hover {
+  background-color: #b3e5fc; /* Πιο έντονο μπλε στο hover */
+  transform: scale(1.05); /* Ελαφριά μεγέθυνση */
+  cursor: pointer;
+}
+
+.history-box-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.history-box-description {
+  font-size: 0.9rem;
+  color: #333;
+}
+

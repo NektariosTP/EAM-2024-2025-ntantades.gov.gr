@@ -3,7 +3,7 @@ import "./Announcements.css";
 
 function Announcements() {
     return (
-        <div className="container">
+        <div className="container-announcements">
             <div className="section">
                 <div className="section-title1">Ανακοινώσεις</div>
                 <div className="announcements">

@@ -1,0 +1,356 @@
+/* Κεντρική Διάταξη */
+.oloklhrwmena-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  
+  /* Πλαίσιο Ιδιωτικών Συμφωνητικών */
+  .oloklhrwmena-container {
+    width: 66%;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Τίτλος */
+  .oloklhrwmena-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Υπότιτλος */
+  .oloklhrwmena-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Dropdown Menu */
+  .oloklhrwmena-sort-dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .oloklhrwmena-sort-dropdown-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+  }
+  
+  .oloklhrwmena-sort-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .oloklhrwmena-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .oloklhrwmena-dropdown-item:hover {
+    background-color: #ddd;
+  }
+  
+  /* Λίστα Ιδιωτικών Συμφωνητικών */
+  .oloklhrwmena-list {
+    margin-top: 10px;
+  }
+  
+  .oloklhrwmena-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Ημερομηνία */
+  .oloklhrwmena-date-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .oloklhrwmena-date-block {
+    background-color: #add8e6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Περιεχόμενο */
+  .oloklhrwmena-content {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .oloklhrwmena-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .oloklhrwmena-content p.bold-text {
+    font-weight: bold;
+  }
+  
+  .oloklhrwmena-content .status-icon {
+    margin-left: 8px;
+  }
+  
+  .contract-type {
+    margin-top: 10px;
+    font-style: italic;
+    color: gray;
+  }
+  
+  /* Κουμπιά */
+  .oloklhrwmena-action {
+    align-self: flex-start;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .oloklhrwmena-action:hover {
+    background-color: #176a1b;
+  }
+  
+  .envelope-icon {
+    margin-right: 8px;
+  }
+  
+  /* Στυλ για Σελιδοποίηση */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination span:hover {
+    text-decoration: underline;
+}
+
+.pagination .page-number.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pagination span.disabled {
+    pointer-events: none;
+    color: #ccc;
+}
+  
+  /* Κείμενο "Δεν υπάρχουν..." */
+  .oloklhrwmena-no-more {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+  }
+  
+  .approved-icon{
+    color: green;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .no-approved-icon{
+    color: red;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  /* Κουμπί Αποστολής Μηνύματος */
+.oloklhrwmena-action {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.oloklhrwmena-action:hover {
+    background-color: #176a1b;
+}
+
+.envelope-icon {
+    margin-right: 8px;
+}
+
+/* Popup Overlay */
+.oloklhrwmena-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.oloklhrwmena-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
+
+.oloklhrwmena-popup-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.oloklhrwmena-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.oloklhrwmena-send-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.oloklhrwmena-send-btn:hover {
+    background-color: #176a1b;
+}
+
+.oloklhrwmena-cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.oloklhrwmena-cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Επιβεβαίωση Μηνύματος */
+.oloklhrwmena-success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    font-size: 1rem;
+    animation: fade-in-out 3s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Buttons for contract actions */
+.oloklhrwmena-buttons {
+    display: flex;
+    gap: 500px;
+    margin-top: 10px;
+}
+
+.oloklhrwmena-buttons .edit-button,
+.oloklhrwmena-buttons .cancel-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.oloklhrwmena-buttons .edit-button {
+    background-color: #9cd4ed;
+    color: black;
+} 
+
+.oloklhrwmena-buttons .cancel-button {
+    background-color: #f44336;
+}
+
+.oloklhrwmena-buttons .cancel-buttonn {
+  background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* Μετακινεί το κουμπί δεξιά */
+}
+
+/* Hover effects */
+.oloklhrwmena-buttons .edit-button:hover {
+    background-color: #3981ce;
+}
+
+.oloklhrwmena-buttons .cancel-button:hover {
+    background-color: #d32f2f;
+}
+
+.oloklhrwmena-buttons .cancel-buttonn:hover {
+  background-color: #d32f2f;
+}
+

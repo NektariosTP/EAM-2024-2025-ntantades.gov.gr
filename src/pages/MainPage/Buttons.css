@@ -28,25 +28,25 @@
     margin-right: 20px;
 }
 
-.buttons-container {
+.buttons-container-main {
     display: flex;
     justify-content: center;
     padding: 20px 50px;
     margin-top: 20px;
 }
 
-.button-section {
+.button-section-main {
     width: 45%;
     text-align: center;
 }
 
-.button-section p {
+.button-section-main p {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.action-button {
+.action-button-main {
     cursor: pointer;
     display: inline-block;
     padding: 15px;
@@ -66,7 +66,7 @@
     width: 20%;
 }
 
-.action-button:hover {
+.action-button-main:hover {
     background-color: #0065b3;
     color: white;
 }

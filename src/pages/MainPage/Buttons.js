@@ -15,18 +15,18 @@ function Buttons() {
             </header>
 
             {/* Buttons Container */}
-            <div className="buttons-container">
+            <div className="buttons-container-main">
                 
                 {/* Αριστερό Section */}
-                <div className="button-section">
+                <div className="button-section-main">
                     <p>Χρειάζεστε νταντά για το παιδί σας;</p>
-                    <button className="action-button" onClick={() => navigate("/Goneis")}>Γονέας</button>
+                    <button className="action-button-main" onClick={() => navigate("/Goneis")}>Γονέας</button>
                 </div>
 
                 {/* Δεξί Section */}
-                <div className="button-section">
+                <div className="button-section-main">
                     <p>Αναζητείτε εργασία ως νταντά;</p>
-                    <button className="action-button" onClick={() => navigate("/Ntantades")}>Νταντά</button>
+                    <button className="action-button-main" onClick={() => navigate("/Ntantades")}>Νταντά</button>
                 </div>
             </div>
         </div>

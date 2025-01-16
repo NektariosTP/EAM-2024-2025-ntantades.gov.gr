@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.container-announcements {
     justify-content: center;
     display: flex;
     flex-direction: row;

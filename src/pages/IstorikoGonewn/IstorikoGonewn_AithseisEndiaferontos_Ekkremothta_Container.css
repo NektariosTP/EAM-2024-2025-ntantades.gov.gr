@@ -1,0 +1,300 @@
+/* Κεντρική Διάταξη */
+.aitiseis-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+/* Πλαίσιο Αιτήσεων */
+.aitiseis-container {
+    width: 66%;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Τίτλος */
+.aitiseis-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Υπότιτλος */
+.aitiseis-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Dropdown Menu */
+.aitiseis-sort-dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.aitiseis-sort-dropdown-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.aitiseis-sort-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.aitiseis-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.aitiseis-dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* Λίστα Αιτήσεων */
+.aitiseis-list {
+    margin-top: 10px;
+}
+
+.aitiseis-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Ημερομηνία */
+.aitiseis-date-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.aitiseis-date-block {
+    background-color: #add8e6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Περιεχόμενο */
+.aitiseis-content {
+    text-align: left;
+    width: 100%;
+}
+
+.aitiseis-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.aitiseis-content p.bold-text {
+    font-weight: bold;
+}
+
+/* Όνομα Νταντάς */
+.aitiseis-nanny-name {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aitiseis-nanny-name:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Κουμπιά */
+.aitiseis-action {
+    align-self: flex-start;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+}
+
+.aitiseis-action:hover {
+    background-color: #176a1b;
+}
+
+.aitiseis-buttons {
+    display: flex;
+    gap: 600px;
+    margin-top: 10px;
+}
+
+.aitiseis-buttons .edit-button,
+.aitiseis-buttons .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.aitiseis-buttons .edit-button {
+    background-color: #9cd4ed;
+    height: 45px;
+    color: black;
+}
+
+.aitiseis-buttons .delete-button {
+    background-color: #f44336;
+    height: 35px;
+}
+
+/* Hover effects */
+.aitiseis-buttons .edit-button:hover {
+    background-color: #3981ce;
+}
+
+.aitiseis-buttons .delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.idiotika-wait-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+/* Κείμενο "Δεν υπάρχουν..." */
+.aitiseis-no-more {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+  }
+
+  /* Κουμπί Αποστολής Μηνύματος */
+.aitiseis-action {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.aitiseis-action:hover {
+    background-color: #176a1b;
+}
+
+.envelope-icon {
+    margin-right: 8px;
+}
+
+/* Popup Overlay */
+.aitiseis-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.aitiseis-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
+
+.aitiseis-popup-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.aitiseis-popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aitiseis-send-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aitiseis-send-btn:hover {
+    background-color: #176a1b;
+}
+
+.aitiseis-cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aitiseis-cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Επιβεβαίωση Μηνύματος */
+.aitiseis-success-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    font-size: 1rem;
+    animation: fade-in-out 3s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}

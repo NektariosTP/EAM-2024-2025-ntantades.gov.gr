@@ -1,0 +1,27 @@
+/* Στυλ για Αναζήτηση */
+.search-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+/* Highlighted Text */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
