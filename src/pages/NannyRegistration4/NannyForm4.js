@@ -140,7 +140,7 @@ function NannyForm4() {
   
       // Submit data or navigate to the next page
       console.log("Form Data Submitted: ", formData);
-      navigate("/Ntantades/Eggrafi/5");
+      window.location.href = `${window.location.origin}/Ntantades/Eggrafi/5`;
     }
     else{
       console.log("Validation Errors: ", newErrors);
@@ -301,7 +301,7 @@ function NannyForm4() {
         </p>
 
       <div className="button-group4-nannies">
-        <button type="button" className="back-button" onClick={() => navigate("/Ntantades/Eggrafi/3")}>
+        <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Eggrafi/3`}>
           Πίσω
         </button>
         <button type="button" className="clear-button" onClick={handleClearForm}>
