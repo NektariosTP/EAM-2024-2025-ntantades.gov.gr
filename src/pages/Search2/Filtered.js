@@ -720,7 +720,7 @@ function Filtered() {
 
     const handleNannyClick = (id) => {
         localStorage.setItem("nannyId", id);
-        navigate(`/Goneis/Aggelies/Profile`);
+        window.location.href = `${window.location.origin}/Goneis/Aggelies/Profile`;
     };
 
 
