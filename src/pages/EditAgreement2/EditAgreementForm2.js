@@ -7,12 +7,12 @@ function EditAgreementForm2() {
 
     // Αποθήκευση της κατάστασης
     const handleProceed = () => {
-        navigate("/Goneis/Profil/Synergasies/Leptomereies_Active/Epeksergasia")
+        window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Active/Epeksergasia`;
     };
 
     // Διαγραφή της κατάστασης
     const handleEnd = () => {
-        navigate("/Goneis/Profil/Synergasies/Leptomereies_Active/Liksi");
+        window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Active/Liksi`;
     };
 
     const handlePrint = () => {
@@ -97,7 +97,7 @@ function EditAgreementForm2() {
                 </button>
                 <button className="print-btn-editagreement" onClick={handlePrint}>
                     Εκτύπωση
-                <img src="/print-form.png" alt="Print" className="button-edit-agreement-icon" />
+                <img src="/print.jpg" alt="Print" className="button-edit-agreement-icon" />
                 </button>
             </div>
 
