@@ -15,10 +15,10 @@ function NannyForm6() {
         εμφανίζεται στους γονείς.</p>
         
         <div className="button-group-nannies-ad2">
-          <button type="button" className="back-button" onClick={() => navigate("/Ntantades/Dimiourgia_Aggelias")}>
+          <button type="button" className="back-button" onClick={() =>window.location.href = `${window.location.origin}/Ntantades/Dimiourgia_Aggelias`}>
             Συνέχεια Επεξεργασίας
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Ntantades/MyProfile")}>
+          <button type="button" className="view-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Profil`}>
             Μετάβαση στο Προφίλ μου
           </button>
         </div>
