@@ -530,10 +530,10 @@ function AitisiTemp() {
         <p>Προσοχή! Μέχρι να πατήσετε “Οριστική Υποβολή”, η αίτηση σας δεν θα σταλθεί</p>
         
         <div className="button-group-nannies-ad2">
-          <button type="button" className="back-button" onClick={() => navigate("/Goneis/Aggelies/Profile/Aitisi_endiaferontos")}>
+          <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Goneis/Aggelies/Profile/Aitisi_endiaferontos`}>
             Συνέχεια Επεξεργασίας
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Goneis/MyProfile")}>
+          <button type="button" className="view-button" onClick={() => window.location.href = `${window.location.origin}/Goneis/Profil`}>
             Μετάβαση στο Προφίλ μου
           </button>
         </div>
