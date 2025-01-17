@@ -546,13 +546,13 @@ function DateSuccess() {
         <p>Όταν απαντήσει η νταντά στην αιτησή σας θα λάβετε στο email σας το μύνημα της, συμπεριλαμβανομένου όλων των σχετικών πληροφοριών και τις οδηγίες για τα επόμενα βήματα της διαδικασίας.</p>
 
         <div className="button-group6-nannies">
-          <button type="button" className="back-button" onClick={() => navigate("/")}>
+          <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/` }>
             Επιστροφή στην Αρχική
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Goneis/Aggelies/Profile")}>
+          <button type="button" className="view-button" onClick={() => window.location.href =`${window.location.origin}/Goneis/Aggelies/Profile`}>
           Επιστροφή στο προφίλ της Νταντάς
           </button>
-          <button type="button" className="submit-button" onClick={() => navigate("/temp")}>
+          <button type="button" className="submit-button" onClick={() => window.location.href =`${window.location.origin}/Goneis/Profil/Istoriko_Gonea/Rantevou_Prosexws`}>
           Μετάβαση στα ραντεβού μου
           </button>
         </div>
