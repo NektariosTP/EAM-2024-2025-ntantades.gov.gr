@@ -131,7 +131,7 @@ function NannyForm2() {
     // If there are any errors, do NOT navigate
     if (Object.keys(newErrors).length === 0) {
       console.log("Form Data Submitted: ", formData);
-      navigate("/Ntantades/Eggrafi/3");
+      window.location.href = `${window.location.origin}/Ntantades/Eggrafi/3`;
     } else {
       console.log("Validation Errors: ", newErrors);
     }
@@ -290,7 +290,7 @@ function NannyForm2() {
       {errors.iban && <div className="error-message">{errors.iban}</div>}
 
       <div className="button-group2-nannies">
-        <button type="button" className="back-button" onClick={() => navigate("/Ntantades/Eggrafi")}>
+        <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Eggrafi`}>
           Πίσω
         </button>
         <button type="button" className="clear-button" onClick={handleClearForm}>
