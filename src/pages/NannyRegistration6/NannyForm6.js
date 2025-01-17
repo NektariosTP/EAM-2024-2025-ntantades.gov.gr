@@ -21,7 +21,7 @@ function NannyForm6() {
           <button type="button" className="back-button" onClick={() => navigate("/")}>
             Επιστροφή στην Αρχική
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Ntantades/Profile")}>
+          <button type="button" className="view-button" onClick={() => navigate("/Ntantades/Profil")}>
             Μετάβαση στο Προφίλ μου
           </button>
           <button type="button" className="submit-button" onClick={() => navigate("/Ntantades/Dimiourgia_Aggelias")}>

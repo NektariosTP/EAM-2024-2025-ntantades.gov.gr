@@ -3,7 +3,7 @@
   align-items: flex-start; /* Ευθυγράμμιση επάνω για το κείμενο */
   justify-content: center;
   margin: 20px 0;
-  background-color: #a7e2b8c0; 
+  background-color: #e0f7fa; 
   padding: 10px;
   border-radius: 10px;
   height: 90%;
@@ -33,13 +33,13 @@
 .completed .circle {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  border: 3px solid #045c2cd4; /* Έντονο μπλε περίγραμμα */
+  border: 3px solid #1c40dd; /* Έντονο μπλε περίγραμμα */
 }
 
 .active .circle {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  border: 5px solid #045c2cd4; /* Έντονο μπλε περίγραμμα */
+  border: 5px solid #1c40dd; /* Έντονο μπλε περίγραμμα */
 }
 
 .label {

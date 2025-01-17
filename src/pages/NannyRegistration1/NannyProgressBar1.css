@@ -1,4 +1,16 @@
-
+.progress-bar-maira {
+  display: flex;
+  align-items: flex-start; /* Ευθυγράμμιση επάνω για το κείμενο */
+  justify-content: center;
+  margin: 20px 0;
+  background-color: #e0f7fa; 
+  padding: 10px;
+  border-radius: 10px;
+  height: 90%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
 
 .stage {
   text-align: center;
@@ -21,13 +33,13 @@
 .completed .circle {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  border: 3px solid #045c2cd4; /* Έντονο μπλε περίγραμμα */
+  border: 3px solid #1c40dd; /* Έντονο μπλε περίγραμμα */
 }
 
-.active .circle {
+.active-maira .circle {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  border: 5px solid #045c2cd4; /* Έντονο μπλε περίγραμμα */
+  border: 5px solid #1c40dd; /* Έντονο μπλε περίγραμμα */
 }
 
 .label {

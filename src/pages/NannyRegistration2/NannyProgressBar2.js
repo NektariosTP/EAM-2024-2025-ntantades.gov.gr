@@ -12,19 +12,27 @@ function NannyProgressBar2() {
 
   const handleClick = (index) => {
     if (index === 0) {
-      window.location.href = "/nannies/register";
+      window.location.href = "/Ntantades/Eggrafi";
     }
   };
 
   return (
-    <div className="progress-bar">
+    <div className="progress-bar-maira">
       {steps.map((step, index) => (
         <React.Fragment key={index}>
           <div
-            className={`stage ${index === 0 ? 'completed' : ''}`} // First step is now "ticked"
+            className={`stage ${
+              index === 0
+                ? 'completed-maira'
+                : index === 1
+                ? 'active-maira'
+                : ''
+            }`}
             onClick={() => handleClick(index)}
           >
-            <div className="circle">{index === 0 ? '✔' : index + 1}</div>
+            <div className="circle">
+              {index === 0 ? '✔' : index + 1}
+            </div>
             <p className="label">{step}</p>
           </div>
 
