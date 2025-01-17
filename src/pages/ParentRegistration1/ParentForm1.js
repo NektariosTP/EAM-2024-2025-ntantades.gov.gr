@@ -130,7 +130,7 @@ function ParentForm1() {
     if (Object.keys(newErrors).length === 0) {
       console.log("Form Data Submitted: ", formData);
       //localStorage.removeItem("nannyFormData");
-      navigate("/Goneis/Eggrafi/2");
+      window.location.href = `${window.location.origin}/Goneis/Eggrafi/2`;
     } else {
       console.log("Validation Errors: ", newErrors);
     }
