@@ -7,7 +7,7 @@ function EditAgreementForm4() {
 
     // Αποθήκευση της κατάστασης
     const handleCompletion = () => {
-        navigate("/Goneis/Profil/Synergasies/Leptomereies_Complete/Oloklirosi")
+       window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Complete/Oloklirosi`;
     };
 
     const handlePrint = () => {
@@ -92,7 +92,7 @@ function EditAgreementForm4() {
                 </button>
                 <button className="print-btn-editagreement" onClick={handlePrint}>
                     Εκτύπωση
-                <img src="/print-form.png" alt="Print" className="button-edit-agreement-icon" />
+                <img src="/print.jpg" alt="Print" className="button-edit-agreement-icon" />
                 </button>
             </div>
 
