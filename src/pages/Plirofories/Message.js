@@ -5,6 +5,18 @@ import "./Message.css";
 function Message() {
   const navigate = useNavigate();
 
+  const handleOdigies = () => {
+    window.open("https://ntantades.gov.gr/pdf/odigies_gia_mitroo_epimelitwn.pdf", "_blank");
+  };
+
+  const handleFAQGoneis = () => {
+    window.open("https://ntantades.gov.gr/pdf/FAQ_%CE%A9%CE%A6%CE%95%CE%9B%CE%9F%CE%A5%CE%9C%CE%95%CE%9D%CE%9F%CE%99_new_17.1.2024.pdf", "_blank");
+  }
+
+  const handleFAQNtantades = () =>{
+    window.open("https://ntantades.gov.gr/pdf/FAQ_%CE%B5%CF%80%CE%B9%CE%BA%CE%B1%CE%B9%CF%81%CE%BF%CF%80%CE%BF%CE%B9%CE%B7%CE%BC%CE%AD%CE%BD%CE%BF_%CE%B5%CF%80%CE%B9%CE%BC%CE%B5%CE%BB%CE%B7%CF%84%CE%AD%CF%82.17.1.2024.pdf", "_blank");
+  }
+
   return (
     <div className="message-container">
       <h2>Πληροφορίες</h2>
@@ -36,9 +48,9 @@ function Message() {
         </p>
 
         <ul className="extra-links">
-          <li>● <a href="#">Οδηγίες</a></li>
-          <li>● <a href="#">FAQ Γονέων</a></li>
-          <li>● <a href="#">FAQ Νταντάδων</a></li>
+          <li>● <a href="#" onClick={handleOdigies}>Οδηγίες</a></li>
+          <li>● <a href="#" onClick={handleFAQGoneis}>FAQ Γονέων</a></li>
+          <li>● <a href="#" onClick={handleFAQNtantades}>FAQ Νταντάδων</a></li>
         </ul>
 
         <button className="return-button" onClick={() => navigate('/')}>Επιστροφή στην αρχική</button>

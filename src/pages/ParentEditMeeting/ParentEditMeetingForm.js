@@ -130,7 +130,7 @@ function ParentEditMeetingForm() {
           </p>
   
           {/* Date */}
-          <label className="form-label-rantevou">Ημερομηνία<br/>(μήνας/ημέρα/έτος)</label>
+          <label className="form-label-rantevou">Ημερομηνία</label>
           <input
             type="date"
             value={selectedDate}
@@ -139,6 +139,7 @@ function ParentEditMeetingForm() {
           {errors.selectedDate && <p className="error-text">{errors.selectedDate}</p>}
   
           {/* Time */}
+          <label className="form-label-rantevou">Ώρα</label>
           {availabilityRows.map((row, index) => (
             <div key={index}>
               {/* Time Selection */}

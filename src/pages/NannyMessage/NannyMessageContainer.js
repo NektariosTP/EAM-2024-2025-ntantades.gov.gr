@@ -88,7 +88,7 @@ export default function NannyMessageContainer() {
             <button className="edit-myprofile-button"
             onClick={() => navigate("/Ntantades/Profil/Epeksergasia_Stoixeion")}>Επεξεργασία Στοιχείων</button>
             <button className="edit-ad-button"
-            onClick={() => navigate("/Ntantades/Profil/Dimiourgia_Aggelias")}>Επεξεργασία Αγγελίας</button>
+            onClick={() => navigate("/Ntantades/Dimiourgia_Aggelias")}>Επεξεργασία Αγγελίας</button>
           </div>
           <div className="sidebar-content-profile">
             <h3>Το προφίλ μου</h3>
