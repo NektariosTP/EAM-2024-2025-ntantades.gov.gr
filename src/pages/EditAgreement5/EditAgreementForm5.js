@@ -90,15 +90,15 @@ function EditAgreementForm5() {
 
         <p>Εάν θέλετε να συνεχίσετε να συνεργάζεστε με τον/την 
         Xρήστο Μπίκο:</p>
-        <button type="button" className="renew-agreement-button" onClick={() => navigate("/Goneis/Profil/Symfonitiko")}>
+        <button type="button" className="renew-agreement-button" onClick={() =>  window.location.href = `${window.location.origin}/Goneis/Profil/Istoriko_Gonea/Aithseis_Endiaferontos_Oloklhrwmenes/ypografh_idiwtikou_symfwnhtikou`}>
             Ανανέωση Ιδιωτικού Συμφωνητικού
         </button>
         
         <div className="button-group6-parents">
-          <button type="button" className="back-button" onClick={() => navigate("/")}>
+          <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/`}>
             Επιστροφή στην Αρχική
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Goneis/Profil")}>
+          <button type="button" className="view-button" onClick={() =>window.location.href = `${window.location.origin}/Goneis/Profil`}>
             Μετάβαση στο Προφίλ μου
           </button>
         </div>
