@@ -90,15 +90,15 @@ function EditAgreementForm6() {
 
         <p>Εάν επιθυμείτε να αναζητήσετε νέο επαγγελματία για τη 
         φροντίδα του παιδιού σας:</p>
-        <button type="button" className="renew-agreement-button" onClick={() => navigate("/Goneis")}>
+        <button type="button" className="renew-agreement-button" onClick={() => window.location.href = `${window.location.origin}/Goneis`}>
             Aναζήτηση Νταντάδων
         </button>
         
         <div className="button-group6-parents">
-          <button type="button" className="back-button" onClick={() => navigate("/")}>
+          <button type="button" className="back-button" onClick={() =>  window.location.href = `${window.location.origin}/`}>
             Επιστροφή στην Αρχική
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Goneis/Profil")}>
+          <button type="button" className="view-button" onClick={() =>  window.location.href = `${window.location.origin}/Goneis/Profil`}>
             Μετάβαση στο Προφίλ μου
           </button>
         </div>
