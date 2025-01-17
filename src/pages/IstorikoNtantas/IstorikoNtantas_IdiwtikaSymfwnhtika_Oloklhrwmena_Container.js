@@ -208,11 +208,6 @@ export default function IstorikoNtantas_IdiwtikaSymfwnhtika_Oloklhrwmena_Contain
               >
                 <span className="envelope-icon">✉️</span> Στείλτε μήνυμα
               </button>
-              {contract.type && (
-                  <div className="oloklhrwmena-buttons">
-                  <button className="cancel-buttonn">Λήξη Συνεργασίας</button>
-              </div>
-                )}
 
             </div>
           ))}
