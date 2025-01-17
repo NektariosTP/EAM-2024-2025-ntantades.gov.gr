@@ -68,7 +68,7 @@ export default function EditAgreementForm1() {
               </div>
               <div className="idiotika-action-buttons-editagreement">
                 <button className="idiotika-action-details-editagreement" 
-                onClick={() => navigate("/Goneis/Profil/Synergasies/Leptomereies_Active")}>
+                onClick={() => window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Active`}>
                   Λεπτομέρειες
                 </button>
                 <button className="idiotika-action-editagreement" onClick={() => openPopup(payment.name)}>
@@ -78,9 +78,9 @@ export default function EditAgreementForm1() {
             </div>
                 <div className="idiotika-buttons-editagreement">
                 <button className="edit-button-editagreement" 
-                onClick={() => navigate("/Goneis/Profil/Synergasies/Leptomereies_Active/Epeksergasia")}>Επεξεργασία Συνεργασίας </button>
+                onClick={() => window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Active/Epeksergasia`}>Επεξεργασία Συνεργασίας </button>
                 <button className="cancel-button-editagreement"
-                onClick={() => navigate("/Goneis/Profil/Synergasies/Leptomereies_Active/Liksi")}>Λήξη Συνεργασίας</button>
+                onClick={() => window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Active/Liksi`}>Λήξη Συνεργασίας</button>
               </div>
           </div>
           ))}
@@ -132,7 +132,7 @@ export default function EditAgreementForm1() {
               </div>
               <div className="idiotika-action-buttons-editagreement">
                 <button className="idiotika-action-details-editagreement"
-                onClick={() => navigate("/Goneis/Profil/Synergasies/Leptomereies_Complete")}>
+                onClick={() => window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Complete`}>
                   Λεπτομέρειες
                 </button>
                 <button className="idiotika-action-editagreement" onClick={() => openPopup(payment.name)}>
@@ -142,7 +142,7 @@ export default function EditAgreementForm1() {
             </div>
                 <div className="idiotika-buttons-editagreement">
                 <button className="finish-button-editagreement" 
-                onClick={() => navigate("/Goneis/Profil/Synergasies/Leptomereies_Complete/Oloklirosi")}>Επιβεβαίωση Ολοκλήρωσης της Συνεργασίας </button>
+                onClick={() =>window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies/Leptomereies_Complete/Oloklirosi`}>Επιβεβαίωση Ολοκλήρωσης της Συνεργασίας </button>
               </div>
           </div>
           ))}
@@ -181,7 +181,7 @@ export default function EditAgreementForm1() {
         <div className="sidebar-profile-pic">
             <div className="profile-image">Προσθέστε μια Εικόνα!</div>
             <button className="edit-myprofile-button" 
-            onClick={() => navigate("/Goneis/Profil/Epeksergasia_Stoixeion")}>Επεξεργασία Στοιχείων</button>
+            onClick={() => window.location.href = `${window.location.origin}/Goneis/Profil/Epeksergasia_Stoixeion`}>Επεξεργασία Στοιχείων</button>
         </div>
         <div className="sidebar-content-profile">
             <h3>Το προφίλ μου</h3>
