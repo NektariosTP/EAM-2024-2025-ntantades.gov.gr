@@ -10,7 +10,7 @@ function NannyForm5() {
       <div className="submit-box">
         <p>Είστε σίγουροι ότι θέλετε να ολοκληρώσετε την εγγραφή σας;</p>
         <div className="button-group5-nannies">
-          <button type="button" className="back-button" onClick={() => navigate("/Ntantades/")}>
+          <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades`}>
             Ακύρωση Εγγραφής
           </button>
           <button 
@@ -22,14 +22,14 @@ function NannyForm5() {
           >
             Προεπισκόπηση Εγγραφής
           </button>
-          <button type="button" className="submit-button" onClick={() => navigate("/Ntantades/Eggrafi/Epitixia_Eggrafis")}>
+          <button type="button" className="submit-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Eggrafi/Epitixia_Eggrafis`}>
             Ολοκλήρωση Εγγραφής
           </button>
         </div>
       </div>
 
       <div className="button-group5-nannies-back">
-        <button type="button" className="back-button" onClick={() => navigate("/Ntantades/Eggrafi/4")}>
+        <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Eggrafi/4`}>
           Πίσω
         </button>
       </div>
