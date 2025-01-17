@@ -887,10 +887,10 @@ function AdForm() {
         <button type="button" className="ad-clear-form1" onClick={clearForm}>
           Εκκαθάριση
         </button>
-        <button type="button" onClick={() => navigate("/Ntantades/Prosorini_Apothikefsi")}>
+        <button type="button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Prosorini_Apothikefsi`}>
           Προσωρινή Αποθήκευση
         </button>
-        <button type="button" onClick={() => navigate("/Ntantades/Oristiki_Ypovoli")}>
+        <button type="button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Oristiki_Ypovoli`}>
           Οριστική Υποβολή
         </button>
       </div>
