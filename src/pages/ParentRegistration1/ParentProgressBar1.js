@@ -17,10 +17,10 @@ function ParentProgressBar1() {
   };
 
   return (
-    <div className="progress-bar">
+    <div className="progress-bar-maira">
       {steps.map((step, index) => (
         <React.Fragment key={index}>
-          <div className="stage" onClick={() => handleClick(index)}>
+          <div className={`stage ${index === 0 ? 'active-maira' : ''}`}>
             <div className="circle">{index + 1}</div>
             <p className="label">{step}</p>
           </div>

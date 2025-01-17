@@ -21,7 +21,7 @@ function ParentProgressBar2() {
       {steps.map((step, index) => (
         <React.Fragment key={index}>
           <div
-            className={`stage ${index === 0 ? 'completed' : ''}`} // First step is now "ticked"
+            className={`stage ${index === 0 ? 'completed-maira': index === 1 ? 'active-maira' : ''}`} // First step is now "ticked"
             onClick={() => handleClick(index)}
           >
             <div className="circle">{index === 0 ? '✔' : index + 1}</div>

@@ -19,12 +19,12 @@ function ParentProgressBar3() {
   };
 
   return (
-    <div className="progress-bar">
+    <div className="progress-bar-maira">
       {steps.map((step, index) => (
         <React.Fragment key={index}>
           {/* Stage */}
           <div
-            className={`stage ${index === 0 || index === 1? 'completed' : ''}`} // First step is "ticked"
+            className={`stage ${index === 0 || index === 1? 'completed-maira' : index === 2? 'active-maira': ''}`} // First step is "ticked"
             onClick={() => handleClick(index)}
           >
             <div className="circle">{index === 0 || index === 1? '✔' : index + 1}</div>

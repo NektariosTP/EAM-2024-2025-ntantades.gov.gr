@@ -11,11 +11,11 @@ function ParentProgressBar6() {
   ];
 
   return (
-    <div className="progress-bar">
+    <div className="progress-bar-maira">
       {steps.map((step, index) => (
         <React.Fragment key={index}>
           <div
-            className={`stage ${index === 0 || index === 1 || index === 2 || index === 3 || index === 4? 'completed' : ''}`}
+            className={`stage ${index === 0 || index === 1 || index === 2 || index === 3 || index === 4? 'completed-maira' : index === 5 ? 'active-maira': ''}`}
           >
             <div className="circle">{index === 0 || index === 1 || index === 2 || index === 3 || index === 4? '✔' : index + 1}</div>
             <p className="label">{step}</p>
