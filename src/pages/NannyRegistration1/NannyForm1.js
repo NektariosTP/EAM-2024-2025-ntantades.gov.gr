@@ -132,7 +132,7 @@ function NannyForm1() {
     if (Object.keys(newErrors).length === 0) {
       console.log("Form Data Submitted: ", formData);
       //localStorage.removeItem("nannyFormData");
-      navigate("/Ntantades/Eggrafi/2");
+     window.location.href = `${window.location.origin}/Ntantades/Eggrafi/2`;
     } else {
       console.log("Validation Errors: ", newErrors);
     }
