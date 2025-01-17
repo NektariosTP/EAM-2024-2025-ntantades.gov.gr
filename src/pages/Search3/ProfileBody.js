@@ -557,9 +557,9 @@ function ProfileBody() {
         <div className="attached-files">
           <h3 className='section-title'>Συνημμένα Αρχεία</h3>
           <ul>
-            <li><a href="#">Βιογραφικό</a></li>
-            <li><a href="#">Συστατικές Επιστολές</a></li>
-            <li><a href="#">Πιστοποιητικό Πρώτων Βοηθειών</a></li>
+            <li><a href="https://example.com/biografiko.pdf" target="_blank">Βιογραφικό</a></li>
+            <li><a href="https://example.com/systatikes_epistoles.pdf" target="_blank">Συστατικές Επιστολές</a></li>
+            <li><a href="https://example.com/pistopoiitiko_proton_voitheion.pdf" target="_blank">Πιστοποιητικό Πρώτων Βοηθειών</a></li>
           </ul>
         </div>
         
