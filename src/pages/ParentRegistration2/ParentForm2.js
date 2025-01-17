@@ -129,7 +129,7 @@ function ParentForm2() {
     // If there are any errors, do NOT navigate
     if (Object.keys(newErrors).length === 0) {
       console.log("Form Data Submitted: ", formData);
-      navigate("/Goneis/Eggrafi/3");
+      window.location.href = `${window.location.origin}/Goneis/Eggrafi/3`;
     } else {
       console.log("Validation Errors: ", newErrors);
     }
@@ -277,7 +277,7 @@ function ParentForm2() {
       {errors.email && <div className="error-message">{errors.email}</div>}
 
       <div className="button-group2-nannies">
-        <button type="button" className="back-button" onClick={() => navigate("/Goneis/Eggrafi")}>
+        <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Goneis/Eggrafi`}>
           Πίσω
         </button>
         <button type="button" className="clear-button" onClick={handleClearForm}>
