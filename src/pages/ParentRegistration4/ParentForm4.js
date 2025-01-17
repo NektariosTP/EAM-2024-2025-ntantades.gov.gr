@@ -148,7 +148,7 @@ function ParentForm4() {
   
       // Submit data or navigate to the next page
       console.log("Form Data Submitted: ", formData);
-      navigate("/Goneis/Eggrafi/5");
+      window.location.href = `${window.location.origin}/Goneis/Eggrafi/5`;
     }
     else{
       console.log("Validation Errors: ", newErrors);
@@ -341,7 +341,7 @@ function ParentForm4() {
 
 
       <div className="button-group4-nannies">
-        <button type="button" className="back-button" onClick={() => navigate("/Goneis/Eggrafi/3")}>
+        <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Goneis/Eggrafi/3`}>
           Πίσω
         </button>
         <button type="button" className="clear-button" onClick={handleClearForm}>
