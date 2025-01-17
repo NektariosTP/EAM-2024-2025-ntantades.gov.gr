@@ -207,7 +207,7 @@ function NannyForm3() {
     if (Object.keys(newErrors).length === 0) {
   
       console.log("Form Data Submitted: ", formData);
-      navigate("/Ntantades/Eggrafi/4");
+      window.location.href = `${window.location.origin}/Ntantades/Eggrafi/4`;
     }
     else{
       console.log("Validation Errors: ", newErrors);
@@ -409,7 +409,7 @@ function NannyForm3() {
       {renderFileInput2("Πιστοποιητικό Γλωσσομάθειας (για αλλοδαπούς)", "languageCertification")}
 
       <div className="button-group3-nannies">
-        <button type="button" className="back-button" onClick={() => navigate("/Ntantades/Eggrafi/2")}>
+        <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Eggrafi/2`}>
           Πίσω
         </button>
         <button type="button" className="clear-button" onClick={handleClearForm}>
