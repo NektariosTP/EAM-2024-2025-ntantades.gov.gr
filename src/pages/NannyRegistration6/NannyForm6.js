@@ -18,13 +18,13 @@ function NannyForm6() {
         </div>
         
         <div className="button-group6-nannies">
-          <button type="button" className="back-button" onClick={() => navigate("/")}>
+          <button type="button" className="back-button" onClick={() =>window.location.href = `${window.location.origin}/`}>
             Επιστροφή στην Αρχική
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Ntantades/Profil")}>
+          <button type="button" className="view-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Profil`}>
             Μετάβαση στο Προφίλ μου
           </button>
-          <button type="button" className="submit-button" onClick={() => navigate("/Ntantades/Dimiourgia_Aggelias")}>
+          <button type="button" className="submit-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Dimiourgia_Aggelias`}>
             Δημιουργία Αγγελίας
           </button>
         </div>
