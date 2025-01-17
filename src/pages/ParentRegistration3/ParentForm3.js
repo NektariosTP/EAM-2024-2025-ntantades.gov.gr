@@ -160,7 +160,7 @@ function ParentForm3() {
     if (Object.keys(newErrors).length === 0) {
   
       console.log("Form Data Submitted: ", formData);
-      navigate("/Goneis/Eggrafi/4");
+      window.location.href = `${window.location.origin}/Goneis/Eggrafi/4`;
     }
     else{
       console.log("Validation Errors: ", newErrors);
@@ -278,7 +278,7 @@ function ParentForm3() {
       {renderFileInput("Δήλωση Φορολογίας Εισοδήματος (*)", "taxIncomeCertification")}
       {renderFileInput2("Πιστοποιητικό Οικογενειακής Κατάστασης", "familyStatusCertification")}
       <div className="button-group3-nannies">
-        <button type="button" className="back-button" onClick={() => navigate("/Goneis/Eggrafi/2")}>
+        <button type="button" className="back-button" onClick={() =>window.location.href = `${window.location.origin}/Goneis/Eggrafi/2`}>
           Πίσω
         </button>
         <button type="button" className="clear-button" onClick={handleClearForm}>
