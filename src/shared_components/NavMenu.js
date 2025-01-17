@@ -3,6 +3,19 @@ import { useNavigate } from "react-router-dom";
 import "./NavMenu.css";
 
 function NavMenu() {
+
+    const handleOdigies = () => {
+        window.open("https://ntantades.gov.gr/pdf/odigies_gia_mitroo_epimelitwn.pdf", "_blank");
+      };
+    
+      const handleFAQGoneis = () => {
+        window.open("https://ntantades.gov.gr/pdf/FAQ_%CE%A9%CE%A6%CE%95%CE%9B%CE%9F%CE%A5%CE%9C%CE%95%CE%9D%CE%9F%CE%99_new_17.1.2024.pdf", "_blank");
+      }
+    
+      const handleFAQNtantades = () =>{
+        window.open("https://ntantades.gov.gr/pdf/FAQ_%CE%B5%CF%80%CE%B9%CE%BA%CE%B1%CE%B9%CF%81%CE%BF%CF%80%CE%BF%CE%B9%CE%B7%CE%BC%CE%AD%CE%BD%CE%BF_%CE%B5%CF%80%CE%B9%CE%BC%CE%B5%CE%BB%CE%B7%CF%84%CE%AD%CF%82.17.1.2024.pdf", "_blank");
+      }
+      
     const isParentLoggedIn = localStorage.getItem("isParentLoggedIn") === "true";
     const isNannyLoggedIn = localStorage.getItem("isNannyLoggedIn") === "true";
     const [showPopup, setShowPopup] = useState(false);
@@ -50,16 +63,18 @@ function NavMenu() {
                         <>
                             <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
                             <li onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</li>
+                            <li onClick={() => window.location.href = "/Goneis/Profil/"}>Το Προφίλ Μου</li>
                             <li onClick={() => window.location.href = "/Goneis/Profil/Synergasies"}>Οι Συνεργασίες Μου</li>
-                            <li onClick={() => window.location.href = "/istoriko/plhrwmes"}>Πληρωμή Νταντάς</li>
-                            <li onClick={() => window.location.href = "/Goneis"}>Ιστορικό Αιτήσεων</li>
+                            <li onClick={() => window.location.href = "/Goneis/Profil/Istoriko_Gonea/Plhrwmes/Prosexws"}>Πληρωμή Νταντάς</li>
+                            <li onClick={() => window.location.href = "/Goneis/Profil/Istoriko_Gonea"}>Ιστορικό Αιτήσεων</li>
                         </>
                     ) : (
                         <>
                             <li onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</li>
                             <li onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</li>
+                            <li onClick={togglePopup}>Το Προφίλ Μου</li>
+                            <li onClick={togglePopup}>Οι Συνεργασίες Μου</li>
                             <li onClick={togglePopup}>Πληρωμή Νταντάς</li>
-                            <li onClick={togglePopup}>Επεξεργασία Συνεργασίας</li>
                             <li onClick={togglePopup}>Ιστορικό Αιτήσεων</li>
                         </>
                     )}
@@ -73,16 +88,18 @@ function NavMenu() {
                             <li onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</li>
                             <li onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</li>
                             <li onClick={() => window.location.href = "/Ntantades/Dimiourgia_Aggelias"}>Δημιουργία Αγγελίας</li>
-                            <li onClick={() => window.location.href = "/istorikoo/rantevou/prosexws"}>Ραντεβού με Γονείς</li>
-                            <li onClick={() => window.location.href = "/istorikoo/plhrwmes/prosexws"}>Αποδοχή Πληρωμής</li>
-                            <li onClick={() => window.location.href = "/istorikoo"}>Ιστορικό Αιτήσεων</li>
-                            <li onClick={() => window.location.href = "/istorikoo/aksiologhseis"}>Αξιολόγηση Προφίλ</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Profil"}>Το Προφίλ Μου</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta/Rantevou_Prosexws"}>Ραντεβού με Γονείς</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta/Plhrwmes_Prosexws/Apodoxh_Plhrwmhs"}>Αποδοχή Πληρωμής</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta"}>Ιστορικό Αιτήσεων</li>
+                            <li onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta/Aksiologhseis"}>Αξιολόγηση Προφίλ</li>
                         </>
                     ) : (
                         <>
                             <li onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</li>
                             <li onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</li>
                             <li onClick={togglePopup}>Δημιουργία Αγγελίας</li>
+                            <li onClick={togglePopup}>Το Προφίλ Μου</li>
                             <li onClick={togglePopup}>Ραντεβού με Γονείς</li>
                             <li onClick={togglePopup}>Αποδοχή Πληρωμής</li>
                             <li onClick={togglePopup}>Ιστορικό Αιτήσεων</li>
@@ -95,9 +112,9 @@ function NavMenu() {
                 <h3>Βοήθεια</h3>
                 <ul>
                     <li onClick={() => window.location.href = "/Plirofories"}>Τι είναι το πρόγραμμα;</li>
-                    <li>Οδηγίες</li>
-                    <li>FAQ Γονέων</li>
-                    <li>FAQ Νταντάδων</li>
+                    <li onClick={handleOdigies}>Οδηγίες</li>
+                    <li onClick={handleFAQGoneis}>FAQ Γονέων</li>
+                    <li onClick={handleFAQNtantades}>FAQ Νταντάδων</li>
                 </ul>
             </div>
             <div className="menu-column">

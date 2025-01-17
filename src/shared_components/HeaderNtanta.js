@@ -25,7 +25,9 @@ function Header() {
 
     return (
         <header className="header">
-            <img src="/gov_logo.png" alt="Logo" className="logo" />
+            <img src="/gov_logo.png" alt="Logo" className="logo"
+            onClick={() => window.open("https://www.gov.gr", "_blank")}
+            style={{ cursor: "pointer" }} />
             <h1 className="title">Πρόγραμμα "Νταντάδες της Γειτονιάς"</h1>
             <div className="user-menu">
                 <div className="user-info">

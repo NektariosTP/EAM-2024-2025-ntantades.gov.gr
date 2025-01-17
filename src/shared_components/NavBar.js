@@ -62,16 +62,18 @@ const NavBar = () => {
                             <>
                                 <div onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</div>
                                 <div onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</div>
+                                <div onClick={() => window.location.href = "/Goneis/Profil/"}>Το Προφίλ Μου</div>
                                 <div onClick={() => window.location.href = "/Goneis/Profil/Synergasies"}>Οι Συνεργασίες Μου</div>
-                                <div onClick={() => window.location.href = "/istoriko/plhrwmes"}>Πληρωμή Νταντάς</div>
-                                <div onClick={() => window.location.href = "/istoriko"}>Ιστορικό Αιτήσεων</div>
+                                <div onClick={() => window.location.href = "/Goneis/Profil/Istoriko_Gonea/Plhrwmes/Prosexws"}>Πληρωμή Νταντάς</div>
+                                <div onClick={() => window.location.href = "/Goneis/Profil/Istoriko_Gonea"}>Ιστορικό Αιτήσεων</div>
                             </>
                         ) : (
                             <>
                                 <div onClick={() => window.location.href = "/Goneis"}>Προϋποθέσεις Συμμετοχής</div>
                                 <div onClick={() => window.location.href = "/Goneis/Aggelies"}>Αναζήτηση Νταντάδων</div>
+                                <div onClick={togglePopup}>Το Προφίλ Μου</div>
+                                <div onClick={togglePopup}>Οι Συνεργασίες Μου</div>
                                 <div onClick={togglePopup}>Πληρωμή Νταντάς</div>
-                                <div onClick={togglePopup}>Επεξεργασία Συμφωνίας</div>
                                 <div onClick={togglePopup}>Ιστορικό Αιτήσεων</div>
                             </>
                         )}
@@ -93,16 +95,18 @@ const NavBar = () => {
                                 <div onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</div>
                                 <div onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</div>
                                 <div onClick={() => window.location.href = "/Ntantades/Dimiourgia_Aggelias"}>Δημιουργία Αγγελίας</div>
-                                <div onClick={() => window.location.href = "/istorikoo/rantevou/prosexws"}>Ραντεβού με Γονείς</div>
-                                <div onClick={() => window.location.href = "/istorikoo/plhrwmes/prosexws"}>Αποδοχή Πληρωμής</div>
-                                <div onClick={() => window.location.href = "/istorikoo"}>Ιστορικό Αιτήσεων</div>
-                                <div onClick={() => window.location.href = "/istorikoo/aksiologhseis"}>Αξιολογήσεις Προφίλ</div>
+                                <div onClick={() => window.location.href = "/Ntantades/Profil"}>Το Προφίλ Μου</div>
+                                <div onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta/Rantevou_Prosexws"}>Ραντεβού με Γονείς</div>
+                                <div onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta/Plhrwmes_Prosexws/Apodoxh_Plhrwmhs"}>Αποδοχή Πληρωμής</div>
+                                <div onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta"}>Ιστορικό Αιτήσεων</div>
+                                <div onClick={() => window.location.href = "/Ntantades/Profil/Istoriko_Ntanta/Aksiologhseis"}>Αξιολογήσεις Προφίλ</div>
                             </>
                         ) : (
                             <>
                                 <div onClick={() => window.location.href = "/Ntantades"}>Προϋποθέσεις Συμμετοχής</div>
                                 <div onClick={() => window.location.href = "/Ntantades/Eggrafi"}>Εγγραφή στο Μητρώο</div>
                                 <div onClick={togglePopup}>Δημιουργία Αγγελίας</div>
+                                <div onClick={togglePopup}>Το Προφίλ Μου</div>
                                 <div onClick={togglePopup}>Ραντεβού με Γονείς</div>
                                 <div onClick={togglePopup}>Αποδοχή Πληρωμής</div>
                                 <div onClick={togglePopup}>Ιστορικό Αιτήσεων</div>
