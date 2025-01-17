@@ -21,7 +21,7 @@ function AdForm3() {
             }}>
             Προεπισκόπηση Αγγελίας
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Ntantades/MyProfile")}>
+          <button type="button" className="view-button" onClick={() => window.location.href = `${window.location.origin}/Ntantades/Profil`}>
             Μετάβαση στο Προφίλ μου
           </button>
         </div>
