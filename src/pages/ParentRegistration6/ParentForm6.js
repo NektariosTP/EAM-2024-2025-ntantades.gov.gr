@@ -18,10 +18,10 @@ function ParentForm6() {
         </div>
         
         <div className="button-group6-parents">
-          <button type="button" className="back-button" onClick={() => navigate("/")}>
+          <button type="button" className="back-button" onClick={() => window.location.href = `${window.location.origin}/`}>
             Επιστροφή στην Αρχική
           </button>
-          <button type="button" className="view-button" onClick={() => navigate("/Goneis/Aggelies/Profile")}>
+          <button type="button" className="view-button" onClick={() =>window.location.href = `${window.location.origin}/Goneis/Aggelies/Profile`}>
             Επιστροφή στο Προφίλ της Νταντάς
           </button>
         </div>
