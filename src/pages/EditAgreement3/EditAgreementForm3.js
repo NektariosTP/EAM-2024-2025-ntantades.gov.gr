@@ -24,11 +24,11 @@ function EditAgreementForm3() {
   };
 
   const handleProceed = () => {
-    navigate("/Goneis/Profil/Synergasies");
+    window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies`;
   };
 
   const handleEnd = () => {
-    navigate("/Goneis/Profil/Synergasies");
+    window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies`;
   };
 
   const handlePrint = () => {
