@@ -66,7 +66,7 @@ function Query() {
 
     const handleSearch = () => {
         localStorage.setItem("searchInput", input);
-        navigate(`/Goneis/Aggelies`);
+        window.location.href = `${window.location.pathname}/Aggelies`; 
     };
 
     return (
