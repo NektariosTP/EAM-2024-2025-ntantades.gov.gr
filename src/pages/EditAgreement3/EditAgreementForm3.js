@@ -20,7 +20,6 @@ function EditAgreementForm3() {
   });
 
   const handleSave = () => {
-    alert("Η φόρμα αποθηκεύτηκε");
     window.location.href = `${window.location.origin}/Goneis/Profil/Synergasies`;
   };
 
