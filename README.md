@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Ονόματα Μελών Ομάδας
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Βασιλάκης Νικόλαος** - sdi2200016
+- **Παπαδοπούλου Μαρία-Μαλαματή** - sdi2200134
+- **Τσιμπουράκης-Παυλάκος Νεκτάριος** - sdi2200196
 
-## Available Scripts
+# Github και Οδηγίες Εγκατάστασης
 
-In the project directory, you can run:
+- Σύνδεσμος του ιδιωτικού αποθετηρίου: [https://github.com/NektariosTP/EAM.git](https://github.com/NektariosTP/EAM.git)
 
-### `npm start`
+## Προαπαιτούμενα
+Προαπαιτούμενο για την λειτουργία της εφαρμογής είναι φυσικά το **create-react-app** και οι φάκελοι που προκύπτουν από αυτό. Το `node_modules` δεν βρίσκεται μέσα στο αποθετήριο λόγω περιορισμών χώρου.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Εκτέλεση του Προγράμματος
+Όσον αφορά την εκτέλεση του προγράμματος απαιτείται μόνο η εντολή: npm start (και λίγη υπομονή!)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Περιγραφή Εργασίας
 
-### `npm test`
+Η εφαρμογή/ιστοσελίδα μας αποτελεί έναν πλήρη επανασχεδιασμό της πρωτοβουλίας "Νταντάδες της Γειτονιάς", η οποία εντάσσεται στην κυβερνητική "Υπηρεσία Φροντίδας Βρεφών και Νηπίων". Η συγκεκριμένη υπηρεσία στοχεύει στη σύνδεση γονέων με επαγγελματίες φροντίδας παιδιών (νταντάδες), παρέχοντας παράλληλα οικονομική ενίσχυση στους γονείς μέσω επιδοτούμενων voucher.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Υλοποιημένα Χαρακτηριστικά
 
-### `npm run build`
+## Γενικά
+Αρχική Σελίδα (Αρχείο Main Page)
+Προσωποποιημένη πληροφορία ανά κατηγορία χρήστη.
+Δυνατότητα επεξεργασίας προφίλ.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Για Γονείς
+Πληροφόρηση για τα κριτήρια επιλεξιμότητας αλλά και την διαδικασία που πρέπει να ακολουθήσουν (Search1).
+Αναζήτηση επαγγελματιών με βάση διάφορα κριτήρια που κρίναμε απαραίτητα, όπως περιοχή, διαθεσιμότητα, τύπος απασχόλησης,
+χρόνια εμπειρίας, ηλικία, αξιολογήσεις, τίτλος σπουδών, γλώσσες (Search2).
+Προβολή προφίλ και λεπτομερειών επαγγελματιών (Search3).
+Εγγραφή του γονέα στην ιστοσελίδα μέσω συμπλήρωσης φορμών (ParentRegistration1 - ParentRegistration6).
+Δυνατότητα προγραμματισμού ραντεβού γνωριμίας με τους επαγγελματίες (ProgrammatismosRantevou, ProgrammatismosRantavou2)
+Δυνατότητα υποβολής αίτησης ενδιαφέροντος συνεργασίας (AitisiEndiaferontos1), η οποία μπορεί να βρίσκεται είτε σε
+κατάσταση προσωρινής αποθήκευσης (AitisiEndiaferontos3) είτε σε κατάσταση οριστικής υποβολής (Aitisi Endiaferontos2).
+Υπογραφή ιδιωτικού συμφωνητικού συνεργασίας με επαγγελματία (YpografhIdiwtikouSymfwnhtikou(Goneas)).
+Υλοποίηση πληρωμής επαγγελματία (φάκελος Plhrwmh).
+Δυνατότητα εμφάνισης λεπτομερειών της ενεργής συνεργασίας αλλά και ολοκληρωμένων συνεργασιών (EditAgreement2, EditAgreement4), καθώς και
+επεξεργασία της ενεργής συνεργασίας (EditAgreement3). Επιπλέον, δυνατότητα λήξης συνεργασίας μαζί με επιβεβαίωση ολοκλήρωσης, δυνατότητα
+ανανέωσης του συμφωνητικού και αξιολόγηση του επαγγεματία (EditAgreement5, EditAgreement6).
+Προβολή του ιστορικού των ραντεβού, των αιτήσεων ενδιαφέροντος συνεργασίας, των ιδιωτικών συμφωνητικών συνεργασίας,
+των πληρωμών, των μηνυμάτων, των αξιολογήσεων, των ειδοποιήσεων μαζί με τις κατάλληλες ενέργειες που μπορεί να
+εκτελέσει ο χρήστης (φάκελος IstorikoGonewn)
+Προσωπικό προφίλ για την διαχείριση του λογαριασμού, των ραντεβού, των αιτήσεων ενδιαφέροντος συνεργασίας, 
+των ιδιωτικών συμφωνητικών συνεργασίας, των πληρωμών, των μηνυμάτων, των αξιολογήσεων, των ειδοποιήσεων, καθώς και
+δυνατότητα επεξεργασίας των στοιχείων του προφίλ του χρήστη(ParentProfile, ParentEditProfile).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Για Επαγγελματίες
+Πληροφόρηση για τα κριτήρια επιλεξιμότητας αλλά και την διαδικασία που πρέπει να ακολουθήσουν (NannyEligibility).
+Δυνατότητα δημιουργίας βιογραφικού του επαγγελματία (NannyRegistration1 - NannyRegistration6) και αγγελίας(AdCreation1), η οποία
+μπορεί να βρίσκεται είτε σε κατάσταση προσωρινής αποθήκευσης (AdCreation2) είτε σε κατάσταση οριστικής υποβολής (AdCreation3).
+Υπογραφή ιδιωτικού συμφωνητικού συνεργασίας με γονέα(YpografhIdiwtikouSymfwnhtikou(Ntanta)).
+Λήψη του voucher και επιβεβαίωση προς τον γονέα (φάκελος ApodoxhPlhrwmhs).
+Προβολή του ιστορικού των ραντεβού, των αιτήσεων ενδιαφέροντος συνεργασίας, των ιδιωτικών συμφωνητικών συνεργασίας,
+των πληρωμών, των μηνυμάτων, των αξιολογήσεων, των ειδοποιήσεων μαζί με τις κατάλληλες ενέργειες που μπορεί να
+εκτελέσει ο χρήστης (φάκελος IstorikoNtantas).
+Παρακολούθηση προγραμματισμού ραντεβού και δυνατότητα επεξεργασίας του (NannyEditMeeting).
+Προσωπικό προφίλ για την διαχείριση του λογαριασμού, των ραντεβού, των αιτήσεων ενδιαφέροντος συνεργασίας, 
+των ιδιωτικών συμφωνητικών συνεργασίας, των πληρωμών, των μηνυμάτων, των αξιολογήσεων, των ειδοποιήσεων, καθώς και
+δυνατότητα επεξεργασίας των στοιχείων του προφίλ του χρήστη(NannyProfile, NannyEditProfile).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Παρατηρήσεις
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Όπως αναφέρθηκε αναλυτικά παραπάνω, όλα τα ερωτήματα της παρούσας εργασίας υλοποιήθηκαν επιτυχώς. Ωστόσο, για
+την υλοποίησή τους χρησιμοποιήθηκε το localStorage, καθώς δεν κατέστη δυνατή η σύνδεση με τη βάση δεδομένων
+Firebase. Παρ' όλα αυτά, το localStorage εξυπηρετεί επαρκώς την απαίτηση για άμεση ανανέωση των δεδομένων.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Κλείνοντας, θα θέλαμε να εκφράσουμε την ευγνωμοσύνη μας για την ευκαιρία που μας δόθηκε να υλοποιήσουμε την
+παρούσα εργασία. Κατά τη διάρκειά της, αποκτήσαμε πολύτιμη γνώση και εμπειρία που συνέβαλαν στην κατανόηση
+δημιουργίας ιστοσελιδών. Παρόλο που υπήρξαν προκλήσεις, προσπαθήσαμε να ανταποκριθούμε με τον καλύτερο δυνατό
+τρόπο και να παρουσιάσουμε ένα ολοκληρωμένο αποτέλεσμα.
