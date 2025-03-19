@@ -3,6 +3,10 @@
 - **Παπαδοπούλου Μαρία-Μαλαματή** - sdi2200134
 - **Τσιμπουράκης-Παυλάκος Νεκτάριος** - sdi2200196
 
+[![Watch the video](https://img.youtube.com/vi/wnBboW3WAAI/maxresdefault.jpg)](https://youtu.be/wnBboW3WAAI)
+
+### [Watch this video on YouTube](https://youtu.be/wnBboW3WAAI)
+
 # Github και Οδηγίες Εγκατάστασης
 
 ## Προαπαιτούμενα
